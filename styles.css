@@ -43,8 +43,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px; /* Standard edge padding */
-    max-width: 100%;
+    padding: 0 80px; /* Professional, substantial edge padding */
+    max-width: 1440px; /* Bounded width for ultra-wide monitors */
+    margin: 0 auto;
 }
 
 .header-left {
