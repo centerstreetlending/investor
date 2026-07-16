@@ -97,7 +97,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #0c2136; /* Branded blue */
+    color: #4683b3; /* Branded blue */
 }
 
 .investors-btn {
@@ -187,9 +187,9 @@ body {
 }
 
 .btn-primary {
-    background-color: #0c2136;
+    background-color: #4683b3;
     color: #ffffff;
-    border: 1px solid #0c2136;
+    border: 1px solid #4683b3;
 }
 
 .btn-primary:hover {
@@ -199,8 +199,8 @@ body {
 
 .btn-secondary {
     background-color: transparent;
-    color: #0c2136;
-    border: 1px solid #0c2136;
+    color: #4683b3;
+    border: 1px solid #4683b3;
 }
 
 .btn-secondary:hover {
@@ -235,7 +235,7 @@ body {
 }
 
 .founder-quote-author {
-    color: #0c2136; /* Deep blue */
+    color: #4683b3; /* Deep blue */
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -303,7 +303,7 @@ body {
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding: 16px 32px 16px 0; /* Tighter header */
-    border-top: 2px solid #0c2136; /* Branded Blue */
+    border-top: 2px solid #4683b3; /* Branded Blue */
     border-bottom: 1px solid #e2e8f0;
 }
 
@@ -334,7 +334,7 @@ body {
 
 .strategy-badge {
     display: inline-block;
-    background-color: #0c2136; /* Branded Blue */
+    background-color: #4683b3; /* Branded Blue */
     color: #ffffff; /* White text looks better on the bright blue */
     font-size: 0.7rem;
     font-weight: 700;
@@ -350,7 +350,7 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.05rem; /* Slightly tighter */
     font-weight: 700;
-    color: #0c2136; /* Branded Blue */
+    color: #4683b3; /* Branded Blue */
 }
 
 .strategy-description {
@@ -523,7 +523,7 @@ body {
     font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.35rem;
     font-weight: 700;
-    color: #0c2136; /* Branded blue */
+    color: #4683b3; /* Branded blue */
     margin: 0 0 12px 0;
     line-height: 1.3;
 }
@@ -864,8 +864,8 @@ body {
     display: inline-block;
     padding: 10px 20px;
     background-color: transparent;
-    color: #0c2136; /* Branded blue */
-    border: 1px solid #0c2136;
+    color: #4683b3; /* Branded blue */
+    border: 1px solid #4683b3;
     text-align: center;
     font-weight: 600;
     font-size: 0.85rem;
@@ -876,7 +876,7 @@ body {
 }
 
 .investor-card:hover .card-btn {
-    background-color: #0c2136;
+    background-color: #4683b3;
     color: #ffffff;
 }
 
