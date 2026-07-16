@@ -153,15 +153,8 @@ body {
     line-height: 1.2;
     font-weight: 700;
     color: #111827; /* Standardized black */
-    margin-bottom: 0;
+    margin-bottom: 24px; /* Professional spacing to subtitle */
     letter-spacing: -0.01em;
-}
-
-.hero-divider {
-    width: 40px;
-    height: 2px;
-    background-color: #bca071;
-    margin: 32px auto;
 }
 
 .hero-subtitle {
@@ -170,7 +163,7 @@ body {
     color: #4b5563; /* Dark grey */
     font-weight: 400;
     max-width: 680px;
-    margin: 0 auto 40px;
+    margin: 0 auto 32px auto; /* Tighter spacing to button */
 }
 
 .hero-buttons {
