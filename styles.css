@@ -639,6 +639,119 @@ body {
     margin: 0;
 }
 
+/* Footer */
+.main-footer {
+    background-color: #0f172a; /* Dark slate navy */
+    color: #f8fafc;
+    padding: 100px 0 60px 0;
+}
+
+.footer-container {
+    max-width: 1100px; /* Slightly narrower than full width for better reading */
+    margin: 0 auto;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 80px;
+    margin-bottom: 60px;
+}
+
+.footer-col-wide {
+    max-width: 450px;
+}
+
+.footer-heading {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 0 24px 0;
+}
+
+.footer-text {
+    font-size: 0.95rem;
+    color: #94a3b8; /* Slate 400 */
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-links a {
+    color: #cbd5e1; /* Slate 300 */
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+.footer-divider {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 40px;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-disclaimer {
+    font-size: 0.75rem;
+    color: #64748b; /* Slate 500 */
+    line-height: 1.6;
+    margin: 0;
+    max-width: 950px;
+}
+
+.footer-disclaimer strong {
+    color: #94a3b8;
+}
+
+.footer-copyright {
+    font-size: 0.75rem;
+    color: #64748b;
+    margin: 0;
+}
+
+/* Responsive Grid Layouts */
+@media (max-width: 950px) {
+    .how-we-manage-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .detail-item {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0;
+    }
+
+    .detail-desc {
+        margin-bottom: 24px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+}
+
 /* Modal Styles */
 .modal {
     display: none; 
