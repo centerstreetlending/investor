@@ -120,7 +120,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 160px; /* Big, impressive hero length */
+    padding: 110px 0 90px; /* Condensed to pull the quote above the fold */
     background-color: #faf8f5; /* Light cream background */
 }
 
