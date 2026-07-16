@@ -326,7 +326,7 @@ body {
 
 .strategy-title-group {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* Ensures badge stays at the top if title wraps to double lines */
     gap: 12px;
     margin-bottom: 6px; /* Space between title and description */
     flex-wrap: wrap; /* Prevent awkward breaks on small screens */
@@ -343,6 +343,7 @@ body {
     border-radius: 2px;
     text-transform: uppercase;
     flex-shrink: 0;
+    margin-top: 3px; /* Optically aligns badge with the top of the text */
 }
 
 .strategy-name {
