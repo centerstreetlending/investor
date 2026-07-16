@@ -87,15 +87,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Modal Logic
     const modal = document.getElementById('investor-modal');
-    const openBtn = document.getElementById('request-access-btn');
+    const openBtns = document.querySelectorAll('.request-access-btn');
     const closeBtn = document.querySelector('.close-modal');
 
-    if (modal && openBtn && closeBtn) {
+    if (modal && openBtns.length > 0 && closeBtn) {
         // Open Modal
-        openBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            modal.classList.add('active');
-            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        openBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Prevent background scrolling
+            });
         });
 
         // Close Modal via X button
