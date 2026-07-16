@@ -144,11 +144,11 @@ body {
 }
 
 .hero-title {
-    font-family: 'Roboto', sans-serif;
-    font-size: 3.5rem; /* Scaled for center alignment */
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 3rem; /* Standardized size */
     line-height: 1.2;
-    font-weight: 400;
-    color: #1e40af; /* Deep blue */
+    font-weight: 700;
+    color: #111827; /* Standardized black */
     margin-bottom: 0;
     letter-spacing: -0.01em;
 }
@@ -276,8 +276,8 @@ body {
 
 .section-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2.25rem;
-    color: #1e40af; /* Branded Blue */
+    font-size: 3rem; /* Standardized size */
+    color: #111827; /* Standardized black */
     font-weight: 700;
     margin: 0;
     letter-spacing: -0.01em;
@@ -403,8 +403,8 @@ body {
 
 .hwm-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2.5rem;
-    color: #1e40af;
+    font-size: 3rem; /* Standardized size */
+    color: #111827; /* Standardized black */
     font-weight: 700;
     line-height: 1.3;
     margin: 0 0 32px 0;
@@ -493,8 +493,8 @@ body {
 
 .detail-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2.5rem;
-    color: #1e40af; /* Branded blue */
+    font-size: 3rem; /* Standardized size */
+    color: #111827; /* Standardized black */
     font-weight: 700;
     line-height: 1.3;
     margin: 0;
@@ -610,8 +610,8 @@ body {
 
 .cta-title {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 2.75rem;
-    color: #0f172a; /* Slate black */
+    font-size: 3rem; /* Standardized size */
+    color: #111827; /* Standardized black */
     font-weight: 700;
     line-height: 1.2;
     margin: 0 0 24px 0;
