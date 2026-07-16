@@ -120,7 +120,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 120px 0;
+    padding: 60px 0;
     background-color: #faf8f5; /* Light cream background */
 }
 
@@ -211,7 +211,7 @@ body {
 /* Founder Quote Section */
 .quote-section {
     background-color: #f2eee8; /* Darker beige/tan background */
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 .founder-quote {
@@ -256,7 +256,7 @@ body {
 
 /* Strategies Section */
 .strategies-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background-color: #ffffff;
 }
 
@@ -371,7 +371,7 @@ body {
 
 /* How We Manage Section */
 .how-we-manage-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background-color: #f1f5f9; /* Soft light slate grey */
 }
 
@@ -458,7 +458,7 @@ body {
 
 /* Strategies Detail Section */
 .strategies-detail-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background-color: #ffffff;
 }
 
@@ -569,10 +569,10 @@ body {
 
 /* CTA Section */
 .cta-section {
-    padding: 120px 0;
+    padding: 60px 0;
     background-color: #ffffff;
     text-align: center;
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid #f1f5f9;
 }
 
 .cta-container {
