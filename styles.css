@@ -299,7 +299,7 @@ body {
     font-family: 'Roboto Mono', monospace;
     font-size: 0.65rem;
     font-weight: 600;
-    color: #94a3b8; /* Recedes visually to let data pop */
+    color: #475569; /* Darkened for better contrast */
     text-transform: uppercase;
     letter-spacing: 1.5px;
     padding: 16px 32px 16px 0; /* Tighter header */
