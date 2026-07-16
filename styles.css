@@ -1,0 +1,386 @@
+:root {
+    --bg-color-main: #0c2136; /* Dark slate blue from Center Street reference */
+    --bg-color-top: #0a1128; 
+    --text-primary: #ffffff;
+    --text-highlight: #90c2eb; 
+    --text-muted: #b0b8c4; 
+    
+    --font-serif: 'Roboto', sans-serif;
+    --font-sans: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-color-main);
+    color: var(--text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+/* Main Header */
+.main-header {
+    background-color: #ffffff; /* Set header background to white */
+    padding: 16px 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo-image {
+    max-height: 55px;
+    width: auto;
+}
+
+.logo-tagline {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-primary); /* Changed to pure white */
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.divider {
+    color: var(--text-muted);
+    font-size: 2.2rem;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 32px; /* Space between links */
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #111827;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+    color: #1e40af; /* Branded blue */
+}
+
+.investors-btn {
+    font-family: 'Roboto', sans-serif;
+    color: #111827;
+    background-color: transparent;
+    border: 2px solid #111827; /* Dark border for white background */
+    text-decoration: none;
+    padding: 8px 22px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.2s ease;
+}
+
+.investors-btn:hover {
+    background-color: #111827; /* Fill dark on hover */
+    color: #ffffff;
+}
+
+/* Hero Section */
+.hero {
+    padding: 120px 0 80px;
+    background-color: #faf8f5; /* Light cream background */
+}
+
+.hero-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-kicker {
+    color: #bca071; /* Tan accent */
+    background-color: transparent;
+    border: 1px solid #bca071;
+    padding: 6px 16px;
+    border-radius: 0; /* Sharp edges */
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    display: inline-block;
+}
+
+.hero-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem; /* Scaled for center alignment */
+    line-height: 1.2;
+    font-weight: 400;
+    color: #1e40af; /* Deep blue */
+    margin-bottom: 0;
+    letter-spacing: -0.01em;
+}
+
+.hero-divider {
+    width: 40px;
+    height: 2px;
+    background-color: #bca071;
+    margin: 32px auto;
+}
+
+.hero-subtitle {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #4b5563; /* Dark grey */
+    font-weight: 400;
+    max-width: 680px;
+    margin: 0 auto 40px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 24px; /* Space between buttons */
+    margin: 0 auto;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 14px 28px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary {
+    background-color: #1e40af;
+    color: #ffffff;
+    border: 1px solid #1e40af;
+}
+
+.btn-primary:hover {
+    background-color: #17338b;
+    border-color: #17338b;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #1e40af;
+    border: 1px solid #1e40af;
+}
+
+.btn-secondary:hover {
+    background-color: #f1f5f9;
+}
+
+
+/* Founder Quote Section */
+.quote-section {
+    background-color: #f2eee8; /* Darker beige/tan background */
+    padding: 80px 0;
+}
+
+.founder-quote {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #1f2937; 
+    font-style: italic;
+    margin: 0 auto 32px auto;
+    max-width: 760px;
+    text-align: center;
+}
+
+.founder-quote-divider {
+    border: 0;
+    height: 1px;
+    background-color: #bca071; /* Matching tan accent */
+    max-width: 40px;
+    margin: 0 auto 20px auto;
+}
+
+.founder-quote-author {
+    color: #1e40af; /* Deep blue */
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.founder-quote-title {
+    color: #6b7280; 
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+/* Modal Styles */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(4px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.modal.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #f8fafc;
+    padding: 60px;
+    border-radius: 4px;
+    width: 90%;
+    max-width: 1200px;
+    position: relative;
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.modal.active .modal-content {
+    transform: translateY(0);
+}
+
+.close-modal {
+    color: #64748b;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 36px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.close-modal:hover {
+    color: #0f172a;
+}
+
+.modal-title {
+    font-family: 'Roboto', sans-serif; /* Back to Roboto */
+    font-size: 2.25rem;
+    color: #1e293b;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+.modal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.investor-card {
+    background-color: #f1f5f9; /* Cleaner slate */
+    padding: 40px 30px;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+}
+
+.investor-card:hover {
+    background-color: #ffffff;
+    border-color: #bca071; /* Branded tan accent */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transform: translateY(-4px);
+}
+
+.investor-card h3 {
+    color: #0f172a;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.investor-card p {
+    color: #334155;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+}
+
+.investor-card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.investor-card li {
+    color: #334155;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.card-btn {
+    margin-top: auto;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #1e40af; /* Branded blue */
+    border: 1px solid #1e40af;
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.investor-card:hover .card-btn {
+    background-color: #1e40af;
+    color: #ffffff;
+}
+
