@@ -347,8 +347,8 @@ body {
 }
 
 .strategy-name {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.05rem; /* Slightly tighter */
+    font-family: 'Roboto', sans-serif; /* Standardized to match the rest of the table */
+    font-size: 0.85rem; /* Unified font size */
     font-weight: 700;
     color: #4683b3; /* Branded Blue */
 }
