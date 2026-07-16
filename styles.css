@@ -253,6 +253,313 @@ body {
     margin-bottom: 0;
 }
 
+/* Strategies Section */
+.strategies-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.strategies-section .container {
+    max-width: 1050px; /* Constrains width so the table isn't massively stretched */
+}
+
+.strategies-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 40px;
+}
+
+.section-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.25rem;
+    color: #1e40af; /* Branded Blue */
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.as-of-date {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    color: #64748b;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.strategies-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.strategies-table th {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding: 24px 32px 24px 0; /* Optimized spacing */
+    border-top: 2px solid #1e40af; /* Branded Blue */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.strategies-table tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.strategies-table tbody tr:hover {
+    background-color: #f8fafc; /* Subtle, premium hover effect */
+}
+
+.strategies-table td {
+    padding: 36px 32px 36px 0; /* Optimized padding for the narrower layout */
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+    color: #475569; /* Softer dark grey */
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.strategy-badge {
+    display: inline-block;
+    background-color: #1e40af; /* Branded Blue */
+    color: #ffffff; /* White text looks better on the bright blue */
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 6px 10px;
+    border-radius: 2px;
+    margin-bottom: 16px; /* Bigger gap between badge and title */
+    text-transform: uppercase;
+}
+
+.strategy-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #1e40af; /* Branded Blue */
+}
+
+.target-return {
+    color: #4683b3;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.85rem;
+}
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #e2e8f0;
+}
+
+.dot.open {
+    background-color: #10b981;
+}
+
+/* How We Manage Section */
+.how-we-manage-section {
+    padding: 120px 0;
+    background-color: #f1f5f9; /* Soft light slate grey */
+}
+
+.how-we-manage-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    max-width: 1050px; /* Perfectly aligned with the table section width */
+    margin: 0 auto;
+}
+
+.hwm-kicker {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    color: #4683b3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.hwm-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    color: #1e40af;
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0 0 32px 0;
+    letter-spacing: -0.01em;
+}
+
+.hwm-body {
+    font-size: 1.05rem;
+    color: #1e293b;
+    line-height: 1.7;
+    margin-bottom: 24px;
+}
+
+.hwm-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.hwm-item {
+    display: flex;
+    gap: 24px;
+    padding: 32px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.hwm-item:first-child {
+    padding-top: 0;
+}
+
+.hwm-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.hwm-number {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.85rem;
+    color: #4683b3;
+    font-weight: 700;
+    min-width: 30px;
+    margin-top: 2px; /* Slight alignment tweak to match title */
+}
+
+.hwm-content {
+    flex: 1;
+}
+
+.hwm-item-title {
+    font-size: 1.15rem;
+    color: #0f172a; /* Slate black for title */
+    font-weight: 700;
+    margin: 0 0 12px 0;
+}
+
+.hwm-item-desc {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Strategies Detail Section */
+.strategies-detail-section {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.detail-container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.detail-header {
+    margin-bottom: 60px;
+}
+
+.detail-kicker {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.75rem;
+    color: #4683b3;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.detail-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 2.5rem;
+    color: #1e40af; /* Branded blue */
+    font-weight: 700;
+    line-height: 1.3;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.detail-list {
+    border-top: 1px solid #e2e8f0;
+}
+
+.detail-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 80px;
+    padding: 60px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.detail-item:last-child {
+    border-bottom: none;
+}
+
+.detail-strategy-name {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: #1e40af; /* Branded blue */
+    margin: 0 0 12px 0;
+    line-height: 1.3;
+}
+
+.detail-role {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+.detail-desc {
+    font-size: 0.95rem;
+    color: #334155;
+    line-height: 1.7;
+    margin: 0 0 32px 0;
+}
+
+.detail-metrics {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+}
+
+.metric-label {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.65rem;
+    color: #94a3b8;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.metric-value {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.25rem;
+    color: #4683b3;
+}
+
 /* Modal Styles */
 .modal {
     display: none; 
