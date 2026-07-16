@@ -162,7 +162,7 @@ body {
     line-height: 1.6;
     color: #4b5563; /* Dark grey */
     font-weight: 400;
-    max-width: 680px;
+    max-width: 850px; /* Expanded to fit exactly on two lines */
     margin: 0 auto 32px auto; /* Tighter spacing to button */
 }
 
