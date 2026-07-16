@@ -560,6 +560,24 @@ body {
     color: #4683b3;
 }
 
+/* Responsive Grid Layouts */
+@media (max-width: 950px) {
+    .how-we-manage-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .detail-item {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        padding: 40px 0;
+    }
+
+    .detail-desc {
+        margin-bottom: 24px;
+    }
+}
+
 /* Modal Styles */
 .modal {
     display: none; 
