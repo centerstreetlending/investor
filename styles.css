@@ -367,7 +367,7 @@ body {
 
 .status-indicator {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* keep dot aligned to first line if text wraps */
     gap: 8px;
     color: #64748b;
     font-size: 0.85rem;
@@ -378,6 +378,8 @@ body {
     height: 6px;
     border-radius: 50%;
     background-color: #e2e8f0;
+    margin-top: 7px; /* Optically center with first line of text */
+    flex-shrink: 0; /* ensure it never squishes */
 }
 
 .dot.open {
