@@ -91,10 +91,8 @@ body {
     font-family: 'Roboto', sans-serif;
     color: #111827;
     text-decoration: none;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 0.95rem; /* Slightly larger for standard case */
+    font-weight: 500; /* Dropped from 600 to look more natural */
     transition: color 0.2s ease;
 }
 
@@ -109,10 +107,8 @@ body {
     border: 2px solid #111827; /* Dark border for transparent background */
     text-decoration: none;
     padding: 8px 22px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+    font-size: 0.95rem; /* Match nav link size */
+    font-weight: 500;
     transition: all 0.2s ease;
 }
 
@@ -328,6 +324,14 @@ body {
     line-height: 1.6;
 }
 
+.strategy-title-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 6px; /* Space between title and description */
+    flex-wrap: wrap; /* Prevent awkward breaks on small screens */
+}
+
 .strategy-badge {
     display: inline-block;
     background-color: #1e40af; /* Branded Blue */
@@ -337,8 +341,8 @@ body {
     letter-spacing: 2px;
     padding: 6px 10px;
     border-radius: 2px;
-    margin-bottom: 16px; /* Bigger gap between badge and title */
     text-transform: uppercase;
+    flex-shrink: 0;
 }
 
 .strategy-name {
@@ -346,7 +350,12 @@ body {
     font-size: 1.05rem; /* Slightly tighter */
     font-weight: 700;
     color: #1e40af; /* Branded Blue */
-    margin-top: 8px; /* Breathing room from badge */
+}
+
+.strategy-description {
+    color: #64748b; /* Soft grey */
+    font-size: 0.85rem;
+    line-height: 1.5;
 }
 
 .target-return {
