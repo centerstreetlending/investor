@@ -100,9 +100,9 @@ body {
 
 .investors-btn {
     font-family: 'Roboto', sans-serif;
-    color: #ffffff;
-    background-color: #1e40af; /* Solid blue */
-    border: 2px solid #1e40af;
+    color: #111827;
+    background-color: transparent;
+    border: 2px solid #111827; /* Dark border for transparent background */
     text-decoration: none;
     padding: 8px 22px;
     font-size: 0.85rem;
@@ -113,8 +113,8 @@ body {
 }
 
 .investors-btn:hover {
-    background-color: #172554; /* Darker blue on hover */
-    border-color: #172554;
+    background-color: #111827; /* Fill dark on hover */
+    border-color: #111827;
     color: #ffffff;
 }
 
