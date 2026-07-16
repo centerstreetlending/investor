@@ -261,10 +261,8 @@ body {
 }
 
 .strategies-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-bottom: 40px;
+    margin-bottom: 48px;
+    /* Stacked left-aligned layout */
 }
 
 .section-title {
@@ -278,11 +276,11 @@ body {
 
 .as-of-date {
     font-family: 'Roboto Mono', monospace;
-    font-size: 0.75rem;
-    color: #64748b;
+    font-size: 0.7rem;
+    color: #94a3b8; /* Softer professional grey */
     letter-spacing: 2px;
     text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 8px;
 }
 
@@ -298,12 +296,12 @@ body {
 
 .strategies-table th {
     font-family: 'Roboto Mono', monospace;
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #475569;
+    font-size: 0.65rem;
+    font-weight: 600;
+    color: #94a3b8; /* Recedes visually to let data pop */
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding: 24px 32px 24px 0; /* Optimized spacing */
+    padding: 16px 32px 16px 0; /* Tighter header */
     border-top: 2px solid #1e40af; /* Branded Blue */
     border-bottom: 1px solid #e2e8f0;
 }
@@ -317,11 +315,11 @@ body {
 }
 
 .strategies-table td {
-    padding: 36px 32px 36px 0; /* Optimized padding for the narrower layout */
+    padding: 24px 32px 24px 0; /* Tighter vertical rhythm */
     border-bottom: 1px solid #e2e8f0;
     vertical-align: top;
-    color: #475569; /* Softer dark grey */
-    font-size: 0.95rem;
+    color: #334155; /* Crisper dark slate */
+    font-size: 0.85rem; /* Smaller, more professional data size */
     line-height: 1.6;
 }
 
@@ -340,9 +338,10 @@ body {
 
 .strategy-name {
     font-family: 'Playfair Display', Georgia, serif;
-    font-size: 1.15rem;
+    font-size: 1.05rem; /* Slightly tighter */
     font-weight: 700;
     color: #1e40af; /* Branded Blue */
+    margin-top: 8px; /* Breathing room from badge */
 }
 
 .target-return {
