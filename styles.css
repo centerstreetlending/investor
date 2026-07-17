@@ -36,11 +36,11 @@ body {
 /* Main Header */
 .main-header {
     background-color: #ffffff; /* Set header background to white */
-    padding: 10px 0; /* Condensed from 16px */
+    padding: 14px 0; /* Slightly more padding for modern look */
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 1px solid #e2e8f0; /* Soft border when scrolling */
+    border-bottom: 2px solid #bca071; /* Thick tan border matching hero divider */
 }
 
 .nav-container {
@@ -89,33 +89,33 @@ body {
 
 .nav-link {
     font-family: 'Roboto', sans-serif;
-    color: #111827;
+    color: #4b5563; /* Grey to match image */
     text-decoration: none;
-    font-size: 0.95rem; /* Slightly larger for standard case */
-    font-weight: 500; /* Dropped from 600 to look more natural */
+    font-size: 0.8rem; /* Smaller font size */
+    font-weight: 500;
+    letter-spacing: 1.5px; /* Added letter spacing */
     transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    color: #4683b3; /* Branded blue */
+    color: #1d4ed8; /* Blue hover */
 }
 
 .investors-btn {
     font-family: 'Roboto', sans-serif;
-    color: #111827;
+    color: #1d4ed8; /* Blue text */
     background-color: transparent;
-    border: 2px solid #111827; /* Dark border for transparent background */
+    border: 1px solid #1d4ed8; /* Blue border */
     text-decoration: none;
-    padding: 8px 22px;
-    font-size: 0.95rem; /* Match nav link size */
+    padding: 10px 24px;
+    font-size: 0.8rem;
     font-weight: 500;
+    letter-spacing: 1.5px;
     transition: all 0.2s ease;
 }
 
 .investors-btn:hover {
-    background-color: #111827; /* Fill dark on hover */
-    border-color: #111827;
-    color: #ffffff;
+    background-color: #eff6ff; /* Light blue hover background */
 }
 
 /* Hero Section */
