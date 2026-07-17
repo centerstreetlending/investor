@@ -152,7 +152,7 @@ body {
     font-size: 2.75rem; /* Reduced from 3rem */
     line-height: 1.2;
     font-weight: 700;
-    color: #111827; /* Standardized black */
+    color: #1d4ed8; /* Center Street Lending blue */
     margin-bottom: 24px; /* Professional spacing to subtitle */
     letter-spacing: -0.01em;
 }
@@ -273,7 +273,7 @@ body {
 
 .founder-quote {
     font-family: 'Playfair Display', Georgia, serif; /* Reverting to serif */
-    font-size: 1.65rem; /* Larger font size */
+    font-size: 1.5rem; /* Matched to image proportion */
     line-height: 1.6;
     font-weight: 400;
     color: #111827; 
