@@ -152,7 +152,7 @@ body {
     font-size: 2.75rem; /* Reduced from 3rem */
     line-height: 1.2;
     font-weight: 700;
-    color: #4683b3; /* Center Street Lending brand blue */
+    color: #111827; /* Reverted to dark slate */
     margin-bottom: 24px; /* Professional spacing to subtitle */
     letter-spacing: -0.01em;
 }
