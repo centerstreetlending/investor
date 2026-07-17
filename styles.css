@@ -166,6 +166,62 @@ body {
     margin: 0 auto 32px auto; /* Tighter spacing to button */
 }
 
+.hero-divider {
+    border: 0;
+    height: 1.5px;
+    background-color: #bca071;
+    width: 60px;
+    margin: 0 auto 24px auto;
+}
+
+.hero-buttons-group {
+    display: flex;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.btn-group-primary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 700;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #1d4ed8;
+    color: #ffffff;
+    border: 1px solid #1d4ed8;
+}
+
+.btn-group-primary:hover {
+    background-color: #1e3a8a;
+    border-color: #1e3a8a;
+}
+
+.btn-group-secondary {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 16px 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border-radius: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: transparent;
+    color: #1d4ed8;
+    border: 1px solid #1d4ed8;
+    border-left: none; /* Make buttons seamlessly attach */
+}
+
+.btn-group-secondary:hover {
+    background-color: #eff6ff;
+}
+
 .hero-buttons {
     display: flex;
     align-items: center;
