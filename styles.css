@@ -98,14 +98,14 @@ body {
 }
 
 .nav-link:hover {
-    color: #1d4ed8; /* Blue hover */
+    color: #4683b3; /* Branded blue hover */
 }
 
 .investors-btn {
     font-family: 'Roboto', sans-serif;
-    color: #1d4ed8; /* Blue text */
+    color: #4683b3; /* Branded blue text */
     background-color: transparent;
-    border: 1px solid #1d4ed8; /* Blue border */
+    border: 1px solid #4683b3; /* Branded blue border */
     text-decoration: none;
     padding: 10px 24px;
     font-size: 0.8rem;
@@ -152,7 +152,7 @@ body {
     font-size: 2.75rem; /* Reduced from 3rem */
     line-height: 1.2;
     font-weight: 700;
-    color: #1d4ed8; /* Center Street Lending blue */
+    color: #4683b3; /* Center Street Lending brand blue */
     margin-bottom: 24px; /* Professional spacing to subtitle */
     letter-spacing: -0.01em;
 }
@@ -193,14 +193,14 @@ body {
     border-radius: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-    background-color: #1d4ed8;
+    background-color: #4683b3;
     color: #ffffff;
-    border: 1px solid #1d4ed8;
+    border: 1px solid #4683b3;
 }
 
 .btn-group-primary:hover {
-    background-color: #1e3a8a;
-    border-color: #1e3a8a;
+    background-color: #4683b3;
+    border-color: #4683b3;
 }
 
 .btn-group-secondary {
@@ -215,8 +215,8 @@ body {
     text-transform: uppercase;
     letter-spacing: 1px;
     background-color: transparent;
-    color: #1d4ed8;
-    border: 1px solid #1d4ed8;
+    color: #4683b3;
+    border: 1px solid #4683b3;
 }
 
 .btn-group-secondary:hover {
@@ -292,7 +292,7 @@ body {
 }
 
 .founder-quote-author {
-    color: #1d4ed8; /* Vibrant royal blue matching the hero button */
+    color: #4683b3; /* Branded blue */
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
