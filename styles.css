@@ -268,18 +268,18 @@ body {
 /* Founder Quote Section */
 .quote-section {
     background-color: #f2eee8; /* Darker beige/tan background */
-    padding: 60px 0;
+    padding: 80px 0; /* More generous padding */
 }
 
 .founder-quote {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.35rem;
-    line-height: 1.4;
+    font-family: 'Playfair Display', Georgia, serif; /* Reverting to serif */
+    font-size: 1.65rem; /* Larger font size */
+    line-height: 1.6;
     font-weight: 400;
-    color: #1f2937; 
+    color: #111827; 
     font-style: italic;
     margin: 0 auto 32px auto;
-    max-width: 760px;
+    max-width: 850px; /* Wider to match line breaks in mockup */
     text-align: center;
 }
 
@@ -287,25 +287,25 @@ body {
     border: 0;
     height: 1px;
     background-color: #bca071; /* Matching tan accent */
-    max-width: 40px;
-    margin: 0 auto 20px auto;
+    width: 60px; /* Exact width match */
+    margin: 0 auto 24px auto;
 }
 
 .founder-quote-author {
-    color: #4683b3; /* Deep blue */
+    color: #1d4ed8; /* Vibrant royal blue matching the hero button */
     font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
-    margin-bottom: 8px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
     text-align: center;
 }
 
 .founder-quote-title {
-    color: #6b7280; 
-    font-size: 0.7rem;
+    color: #64748b; /* Soft slate grey */
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 0;
