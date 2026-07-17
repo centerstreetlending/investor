@@ -937,3 +937,9 @@ body {
     color: #ffffff;
 }
 
+/* Desktop-specific layout tools */
+@media (max-width: 768px) {
+    .desktop-break {
+        display: none;
+    }
+}
