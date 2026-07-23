@@ -145,8 +145,8 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 140px; /* More padding for large layout */
-    background-color: #f1f5f9; /* Light grey fallback */
-    background-image: linear-gradient(rgba(241, 245, 249, 0.88), rgba(241, 245, 249, 0.88)), url('shutterstock_1869821155_1.webp');
+    background-color: #0f172a; /* Dark navy background */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('shutterstock_1869821155_1.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -162,7 +162,7 @@ body {
 }
 
 .hero-kicker {
-    color: #bca071; /* Back to tan accent */
+    color: #4683b3; /* Brand blue accent */
     background-color: transparent;
     border: none;
     padding: 0;
@@ -178,7 +178,7 @@ body {
     font-size: 4.5rem; /* Massive scale from mockup */
     line-height: 1.05; /* Tighter line height for large text */
     font-weight: 700;
-    color: #111827; /* Dark text */
+    color: #ffffff; /* White text */
     margin-bottom: 32px;
     letter-spacing: -0.02em; /* Tighter tracking */
 }
@@ -194,7 +194,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.15rem;
-    color: #4b5563; /* Dark grey for contrast */
+    color: #94a3b8; /* Slate grey for contrast against navy */
     line-height: 1.6;
     margin-bottom: 48px;
     max-width: 550px; /* Bounded width like mockup */
@@ -221,7 +221,7 @@ body {
     cursor: pointer;
     border-radius: 999px; /* Pill shape */
     text-transform: none; /* Standard casing */
-    background-color: #eab37a; /* Warm tan/orange from mockup */
+    background-color: #4683b3; /* Brand blue */
     color: #ffffff;
     border: none;
     display: inline-flex;
@@ -230,7 +230,7 @@ body {
 }
 
 .btn-group-primary:hover {
-    background-color: #d89e61;
+    background-color: #366b96;
 }
 
 .btn-group-secondary {
@@ -243,8 +243,8 @@ body {
     border-radius: 999px;
     text-transform: none;
     background-color: transparent;
-    color: #4683b3; /* Brand blue text */
-    border: 1px solid #4683b3; /* Brand blue outline */
+    color: #ffffff; /* White text */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white outline */
 }
 
 .btn-group-secondary:hover {
