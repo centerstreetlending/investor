@@ -145,7 +145,11 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 140px; /* More padding for large layout */
-    background-color: #1a1a1a; /* Dark charcoal background */
+    background-color: #f1f5f9; /* Light grey fallback */
+    background-image: linear-gradient(rgba(241, 245, 249, 0.88), rgba(241, 245, 249, 0.88)), url('shutterstock_1869821155_1.webp');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .hero-content {
@@ -158,7 +162,7 @@ body {
 }
 
 .hero-kicker {
-    color: #e5e5e5; /* Light grey text */
+    color: #bca071; /* Back to tan accent */
     background-color: transparent;
     border: none;
     padding: 0;
@@ -174,7 +178,7 @@ body {
     font-size: 4.5rem; /* Massive scale from mockup */
     line-height: 1.05; /* Tighter line height for large text */
     font-weight: 700;
-    color: #ffffff; /* White text */
+    color: #111827; /* Dark text */
     margin-bottom: 32px;
     letter-spacing: -0.02em; /* Tighter tracking */
 }
@@ -190,7 +194,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.15rem;
-    color: #a3a3a3; /* Medium grey for contrast against black */
+    color: #4b5563; /* Dark grey for contrast */
     line-height: 1.6;
     margin-bottom: 48px;
     max-width: 550px; /* Bounded width like mockup */
@@ -238,13 +242,13 @@ body {
     cursor: pointer;
     border-radius: 999px;
     text-transform: none;
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent fill */
-    color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    color: #4683b3; /* Brand blue text */
+    border: 1px solid #4683b3; /* Brand blue outline */
 }
 
 .btn-group-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #eff6ff;
 }
 
 .hero-buttons {
