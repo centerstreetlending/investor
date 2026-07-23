@@ -219,7 +219,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 999px; /* Pill shape */
+    border-radius: 0; /* Sharp corporate rectangles */
     text-transform: none; /* Standard casing */
     background-color: #4683b3; /* Brand blue */
     color: #ffffff;
@@ -240,7 +240,7 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 999px;
+    border-radius: 0; /* Sharp corporate rectangles */
     text-transform: none;
     background-color: transparent;
     color: #ffffff; /* White text */
