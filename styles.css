@@ -36,11 +36,12 @@ body {
 /* Main Header */
 .main-header {
     background-color: #ffffff; /* Set header background to white */
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Subtle shadow for floating effect */
+    border-bottom: 1px solid #f1f5f9; /* Delicate separating line */
     padding: 14px 0; /* Slightly more padding for modern look */
     position: sticky;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid #bca071; /* Thick tan border matching hero divider */
 }
 
 .nav-container {
@@ -120,7 +121,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 110px 0 90px; /* Condensed to pull the quote above the fold */
+    padding: 100px 0 100px; /* Increased breathing room */
     background-color: #f1f5f9; /* Light grey background */
 }
 
@@ -136,12 +137,11 @@ body {
 .hero-kicker {
     color: #bca071; /* Tan accent */
     background-color: transparent;
-    border: 1px solid #bca071;
-    padding: 6px 16px;
-    border-radius: 0; /* Sharp edges */
-    font-size: 0.75rem;
-    font-weight: 500;
-    letter-spacing: 2px;
+    border: none; /* Removed harsh border */
+    padding: 0; /* Removed padding since there's no border */
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 4px; /* Wider letter spacing for editorial feel */
     text-transform: uppercase;
     margin-bottom: 32px;
     display: inline-block;
@@ -158,12 +158,11 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-size: 1.2rem; /* Increased size for confidence */
     color: #4b5563; /* Dark grey */
-    font-weight: 400;
-    max-width: 850px; /* Expanded to fit exactly on two lines */
-    margin: 0 auto 32px auto; /* Tighter spacing to button */
+    line-height: 1.7; /* Improved readability */
+    margin-bottom: 48px; /* More spacing before buttons */
+    max-width: 650px; /* Let it stretch a bit more */
 }
 
 .hero-divider {
@@ -225,22 +224,20 @@ body {
 
 .hero-buttons {
     display: flex;
-    align-items: center;
-    gap: 24px; /* Space between buttons */
-    margin: 0 auto;
+    gap: 24px; /* Increased space between buttons */
+    justify-content: center;
 }
 
-.btn {
-    font-family: 'Roboto', sans-serif;
+.btn-primary, .btn-secondary {
+    display: inline-block;
+    padding: 14px 36px; /* Slightly more substantial buttons */
     font-size: 0.85rem;
     font-weight: 600;
-    padding: 14px 28px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border-radius: 0;
-    text-transform: uppercase;
     letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    border-radius: 4px; /* Subtle modern rounding */
 }
 
 .btn-primary {
