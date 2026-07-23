@@ -47,6 +47,18 @@ body {
     text-transform: uppercase;
 }
 
+.top-bar-link {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #4683b3; /* Branded blue */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.top-bar-link:hover {
+    color: #2c3842; /* Darker navy */
+}
+
 /* Main Header */
 .main-header {
     background-color: #ffffff; /* Set header background to white */
