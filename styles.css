@@ -121,7 +121,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 110px 0 90px; /* Condensed to pull the quote above the fold */
-    background-color: #faf8f5; /* Light cream background */
+    background-color: #f1f5f9; /* Light grey background */
 }
 
 .hero-content {
@@ -267,7 +267,7 @@ body {
 
 /* Founder Quote Section */
 .quote-section {
-    background-color: #f2eee8; /* Darker beige/tan background */
+    background-color: #0f172a; /* Dark slate navy matching footer */
     padding: 80px 0; /* More generous padding */
 }
 
@@ -276,7 +276,7 @@ body {
     font-size: 1.5rem; /* Matched to image proportion */
     line-height: 1.6;
     font-weight: 400;
-    color: #111827; 
+    color: #f8fafc; /* Light text for dark background */
     font-style: italic;
     margin: 0 auto 32px auto;
     max-width: 850px; /* Wider to match line breaks in mockup */
@@ -302,7 +302,7 @@ body {
 }
 
 .founder-quote-title {
-    color: #64748b; /* Soft slate grey */
+    color: #94a3b8; /* Light slate grey for dark background */
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 1px;
