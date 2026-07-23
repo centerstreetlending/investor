@@ -144,7 +144,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 120px 0 140px; /* More padding for large layout */
+    padding: 120px 0 60px; /* Reduced bottom padding */
     background-color: #0f172a; /* Dark navy background */
     background-image: linear-gradient(rgba(15, 23, 42, 0.88), rgba(15, 23, 42, 0.88)), url('shutterstock_1869821155_1.webp');
     background-size: cover;
@@ -294,7 +294,7 @@ body {
 /* Founder Quote Section */
 .quote-section {
     background-color: #0f172a; /* Dark slate navy matching footer */
-    padding: 80px 0; /* More generous padding */
+    padding: 40px 0 80px 0; /* Reduced top padding to pull closer to hero */
 }
 
 .founder-quote {
