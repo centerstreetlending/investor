@@ -179,6 +179,15 @@ body {
     letter-spacing: -0.02em; /* Tighter tracking */
 }
 
+.hero-title-line-1 {
+    display: block;
+}
+
+.hero-title-line-2 {
+    display: block;
+    padding-left: 1.5em; /* Staggered indent for the second line */
+}
+
 .hero-subtitle {
     font-size: 1.15rem;
     color: #a3a3a3; /* Medium grey for contrast against black */
