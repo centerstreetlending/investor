@@ -50,13 +50,13 @@ body {
 .top-bar-link {
     font-size: 0.85rem;
     font-weight: 500;
-    color: #4683b3; /* Branded blue */
+    color: #111827; /* Black text */
     text-decoration: none;
     transition: color 0.2s ease;
 }
 
 .top-bar-link:hover {
-    color: #2c3842; /* Darker navy */
+    color: #4683b3; /* Brand blue hover */
 }
 
 /* Main Header */
@@ -114,7 +114,7 @@ body {
 }
 
 .nav-link {
-    color: #4b5563; /* Grey to match image */
+    color: #111827; /* Black text */
     text-decoration: none;
     font-size: 0.8rem; /* Smaller font size */
     font-weight: 500;
@@ -123,7 +123,7 @@ body {
 }
 
 .nav-link:hover {
-    color: #4683b3; /* Branded blue hover */
+    color: #4683b3; /* Brand blue hover */
 }
 
 .investors-btn {
