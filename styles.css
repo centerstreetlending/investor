@@ -65,7 +65,6 @@ body {
 }
 
 .logo-tagline {
-    font-family: 'Roboto', sans-serif;
     color: var(--text-primary); /* Changed to pure white */
     font-size: 0.95rem;
     font-weight: 500;
@@ -89,7 +88,6 @@ body {
 }
 
 .nav-link {
-    font-family: 'Roboto', sans-serif;
     color: #4b5563; /* Grey to match image */
     text-decoration: none;
     font-size: 0.8rem; /* Smaller font size */
@@ -103,7 +101,6 @@ body {
 }
 
 .investors-btn {
-    font-family: 'Roboto', sans-serif;
     color: #4683b3; /* Branded blue text */
     background-color: transparent;
     border: 1px solid #4683b3; /* Branded blue border */
@@ -148,7 +145,6 @@ body {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.75rem; /* Reduced from 3rem */
     line-height: 1.2;
     font-weight: 700;
@@ -182,7 +178,6 @@ body {
 }
 
 .btn-group-primary {
-    font-family: 'Roboto', sans-serif;
     font-size: 0.85rem;
     font-weight: 700;
     padding: 16px 32px;
@@ -203,7 +198,6 @@ body {
 }
 
 .btn-group-secondary {
-    font-family: 'Roboto', sans-serif;
     font-size: 0.85rem;
     font-weight: 500;
     padding: 16px 32px;
@@ -269,7 +263,6 @@ body {
 }
 
 .founder-quote {
-    font-family: 'Playfair Display', Georgia, serif; /* Reverting to serif */
     font-size: 1.5rem; /* Matched to image proportion */
     line-height: 1.6;
     font-weight: 400;
@@ -320,7 +313,6 @@ body {
 }
 
 .section-title {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2rem; /* Reduced to ensure it fits on one line */
     color: #111827; /* Standardized black */
     font-weight: 700;
@@ -329,7 +321,6 @@ body {
 }
 
 .as-of-date {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.7rem;
     color: #94a3b8; /* Softer professional grey */
     letter-spacing: 2px;
@@ -350,7 +341,6 @@ body {
 }
 
 .strategies-table th {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.65rem;
     font-weight: 600;
     color: #475569; /* Darkened for better contrast */
@@ -401,7 +391,6 @@ body {
 }
 
 .strategy-name {
-    font-family: 'Roboto', sans-serif; /* Standardized to match the rest of the table */
     font-size: 0.85rem; /* Unified font size */
     font-weight: 700;
     color: #4683b3; /* Branded Blue */
@@ -415,7 +404,6 @@ body {
 
 .target-return {
     color: #4683b3;
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.85rem;
 }
 
@@ -453,7 +441,6 @@ body {
 }
 
 .hwm-kicker {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.75rem;
     color: #4683b3;
     letter-spacing: 2px;
@@ -463,7 +450,6 @@ body {
 }
 
 .hwm-title {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.25rem; /* Reduced size */
     color: #111827; /* Standardized black */
     font-weight: 700;
@@ -501,7 +487,6 @@ body {
 }
 
 .hwm-number {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.85rem;
     color: #4683b3;
     font-weight: 700;
@@ -538,7 +523,6 @@ body {
 }
 
 .detail-kicker {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.75rem;
     color: #4683b3;
     letter-spacing: 2px;
@@ -548,7 +532,6 @@ body {
 }
 
 .detail-title {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.25rem; /* Reduced size */
     color: #111827; /* Standardized black */
     font-weight: 700;
@@ -574,7 +557,6 @@ body {
 }
 
 .detail-strategy-name {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.35rem;
     font-weight: 700;
     color: #4683b3; /* Branded blue */
@@ -583,7 +565,6 @@ body {
 }
 
 .detail-role {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.65rem;
     color: #94a3b8;
     letter-spacing: 1.5px;
@@ -605,7 +586,6 @@ body {
 }
 
 .metric-label {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.65rem;
     color: #94a3b8;
     letter-spacing: 1.5px;
@@ -615,7 +595,6 @@ body {
 }
 
 .metric-value {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 1.25rem;
     color: #4683b3;
 }
@@ -655,7 +634,6 @@ body {
 }
 
 .cta-kicker {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.75rem;
     color: #4683b3;
     letter-spacing: 2px;
@@ -665,7 +643,6 @@ body {
 }
 
 .cta-title {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 2.25rem; /* Reduced size */
     color: #111827; /* Standardized black */
     font-weight: 700;
@@ -682,14 +659,12 @@ body {
 }
 
 .cta-section .btn-primary {
-    font-family: 'Roboto Mono', monospace;
     padding: 16px 32px;
     font-size: 0.9rem;
     margin-bottom: 24px;
 }
 
 .cta-note {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.7rem;
     color: #94a3b8;
     margin: 0;
@@ -714,7 +689,6 @@ body {
 }
 
 .footer-heading {
-    font-family: 'Roboto Mono', monospace;
     font-size: 0.75rem;
     color: #ffffff;
     letter-spacing: 2px;
@@ -856,7 +830,6 @@ body {
 }
 
 .modal-title {
-    font-family: 'Roboto', sans-serif; /* Back to Roboto */
     font-size: 2.25rem;
     color: #1e293b;
     margin-bottom: 40px;
