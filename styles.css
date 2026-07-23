@@ -33,6 +33,20 @@ body {
     padding: 0 40px;
 }
 
+/* Top Bar */
+.top-bar {
+    background-color: #f1f5f9; /* Subtle light slate */
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.top-bar-text {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #64748b; /* Soft slate grey */
+    text-transform: uppercase;
+}
+
 /* Main Header */
 .main-header {
     background-color: #ffffff; /* Set header background to white */
