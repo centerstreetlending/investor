@@ -144,102 +144,98 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 100px 0 100px; /* Increased breathing room */
-    background-color: #f1f5f9; /* Light grey background */
+    padding: 120px 0 140px; /* More padding for large layout */
+    background-color: #1a1a1a; /* Dark charcoal background */
 }
 
 .hero-content {
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
+    max-width: 900px; /* Allow wider text */
+    margin: 0;
+    text-align: left; /* Left align */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-kicker {
-    color: #bca071; /* Tan accent */
+    color: #e5e5e5; /* Light grey text */
     background-color: transparent;
-    border: none; /* Removed harsh border */
-    padding: 0; /* Removed padding since there's no border */
+    border: none;
+    padding: 0;
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 4px; /* Wider letter spacing for editorial feel */
+    letter-spacing: 2px; /* Tighter letter spacing to match mockup */
     text-transform: uppercase;
-    margin-bottom: 32px;
+    margin-bottom: 24px; /* Tighter spacing to massive title */
     display: inline-block;
 }
 
 .hero-title {
-    font-size: 2.75rem; /* Reduced from 3rem */
-    line-height: 1.2;
+    font-size: 4.5rem; /* Massive scale from mockup */
+    line-height: 1.05; /* Tighter line height for large text */
     font-weight: 700;
-    color: #111827; /* Standardized black to match other titles */
-    margin-bottom: 24px; /* Professional spacing to subtitle */
-    letter-spacing: -0.01em;
+    color: #ffffff; /* White text */
+    margin-bottom: 32px;
+    letter-spacing: -0.02em; /* Tighter tracking */
 }
 
 .hero-subtitle {
-    font-size: 1.2rem; /* Increased size for confidence */
-    color: #4b5563; /* Dark grey */
-    line-height: 1.7; /* Improved readability */
-    margin-bottom: 48px; /* More spacing before buttons */
-    max-width: 650px; /* Let it stretch a bit more */
+    font-size: 1.15rem;
+    color: #a3a3a3; /* Medium grey for contrast against black */
+    line-height: 1.6;
+    margin-bottom: 48px;
+    max-width: 550px; /* Bounded width like mockup */
 }
 
 .hero-divider {
-    border: 0;
-    height: 1.5px;
-    background-color: #bca071;
-    width: 60px;
-    margin: 0 auto 24px auto;
+    display: none; /* Removed divider to match mockup */
 }
 
 .hero-buttons-group {
     display: flex;
-    align-items: stretch;
-    justify-content: center;
-    gap: 24px; /* Space between buttons */
-    margin: 0 auto;
+    align-items: center; /* Center items horizontally (button + circles if added) */
+    justify-content: flex-start; /* Align left */
+    gap: 24px;
+    margin: 0;
 }
 
 .btn-group-primary {
-    font-size: 0.85rem;
-    font-weight: 700;
-    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 36px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: #4683b3;
+    border-radius: 999px; /* Pill shape */
+    text-transform: none; /* Standard casing */
+    background-color: #eab37a; /* Warm tan/orange from mockup */
     color: #ffffff;
-    border: 1px solid #4683b3;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* For the arrow */
 }
 
 .btn-group-primary:hover {
-    background-color: #4683b3;
-    border-color: #4683b3;
+    background-color: #d89e61;
 }
 
 .btn-group-secondary {
-    font-size: 0.85rem;
-    font-weight: 500;
-    padding: 16px 32px;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 16px 36px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    background-color: transparent;
-    color: #4683b3;
-    border: 1px solid #4683b3;
+    border-radius: 999px;
+    text-transform: none;
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle transparent fill */
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .btn-group-secondary:hover {
-    background-color: #eff6ff;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .hero-buttons {
