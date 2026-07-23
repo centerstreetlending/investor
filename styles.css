@@ -193,10 +193,12 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
+    display: block;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+    font-size: 20px;
+    line-height: 125%;
     color: #ffffff; /* White text for maximum contrast */
-    line-height: 1.6;
-    margin-bottom: 48px;
     max-width: 550px; /* Bounded width like mockup */
 }
 
@@ -242,13 +244,13 @@ body {
     cursor: pointer;
     border-radius: 0; /* Sharp corporate rectangles */
     text-transform: none;
-    background-color: transparent;
+    background-color: rgba(255, 255, 255, 0.05); /* Slight fill */
     color: #ffffff; /* White text */
-    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle white outline */
+    border: 1px solid #ffffff; /* Solid white outline */
 }
 
 .btn-group-secondary:hover {
-    background-color: #eff6ff;
+    background-color: rgba(255, 255, 255, 0.15); /* Brighter fill on hover */
 }
 
 .hero-buttons {
