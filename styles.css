@@ -319,6 +319,87 @@ body {
 
 
 
+/* Approach Section */
+.approach-section {
+    background-color: #f8fafc; /* Very light slate/grey */
+    padding: 100px 0;
+}
+
+.approach-container {
+    max-width: 1300px; /* Wider container for 4 columns */
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.approach-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.approach-title {
+    font-size: var(--text-4xl);
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+}
+
+.approach-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+.approach-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 32px 24px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border: 1px solid #f1f5f9;
+    display: flex;
+    flex-direction: column;
+}
+
+.approach-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #fff7ed; /* Very light orange background */
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: #f26522; /* Vibrant orange icon */
+}
+
+.approach-card-title {
+    font-size: var(--text-base);
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+
+.approach-card-text {
+    font-size: var(--text-sm);
+    color: #64748b;
+    line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+    .approach-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 640px) {
+    .approach-grid {
+        grid-template-columns: 1fr;
+    }
+    .approach-title {
+        font-size: var(--text-3xl);
+    }
+}
+
 /* Strategies Section */
 .strategies-section {
     padding: 60px 0;
