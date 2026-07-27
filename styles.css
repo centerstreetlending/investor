@@ -1386,7 +1386,8 @@ body {
     width: 100%;
     height: 100vh;
     background-color: #ffffff;
-    z-index: 1000;
+    z-index: 999; /* Slide under the main header (z-index: 1000) */
+    padding-top: 80px; /* Clear the header height */
     transform: translateY(-100%);
     transition: transform 0.4s ease-in-out;
     display: flex;
@@ -1447,9 +1448,14 @@ body.no-scroll {
         width: 100%;
         gap: 16px;
     }
-    .btn-group-primary, .btn-group-secondary {
+    
+    /* Ensure all buttons center text perfectly on mobile */
+    .btn-group-primary, .btn-group-secondary, .btn-primary, .btn-secondary, .card-btn, .investors-btn {
         width: 100%;
+        display: flex;
         justify-content: center;
+        align-items: center;
+        text-align: center;
     }
 
     /* Padding & Spacing for major sections */
@@ -1472,6 +1478,11 @@ body.no-scroll {
     .leadership-title,
     .cta-title {
         font-size: 1.75rem;
+    }
+
+    /* Fix Typography Wrapping */
+    h1 br, h2 br {
+        display: none;
     }
 
     /* Grids */
