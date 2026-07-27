@@ -1086,11 +1086,13 @@ body {
 .cta-section .btn-primary {
     padding: 16px 48px;
     font-size: 1.125rem;
+    background-color: #f26522; /* Set to orange */
     box-shadow: 0 0 60px 10px rgba(242, 101, 34, 0.15); /* Glowing rectangular shadow */
     transition: all 0.3s ease;
 }
 
 .cta-section .btn-primary:hover {
+    background-color: #ea580c;
     box-shadow: 0 0 70px 15px rgba(242, 101, 34, 0.25);
     transform: translateY(-2px);
 }
@@ -1101,63 +1103,51 @@ body {
     margin: 0;
 }
 
-/* Footer */
+/* Footer Section */
 .main-footer {
-    background-color: #0f172a; /* Dark slate navy */
-    color: #f8fafc;
-    padding: 100px 0 60px 0;
+    background-color: #0f172a;
+    color: #94a3b8;
+    padding: 80px 0 40px;
+}
+
+.footer-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
 }
 
 .footer-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     margin-bottom: 60px;
 }
 
-.footer-col-wide {
+.footer-col-left {
     max-width: 450px;
 }
 
+.footer-col-right {
+    text-align: left;
+}
+
 .footer-heading {
-    font-size: 0.75rem;
     color: #ffffff;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    font-size: 1.125rem;
     font-weight: 700;
-    margin: 0 0 24px 0;
+    margin-bottom: 24px;
 }
 
 .footer-text {
-    font-size: 0.95rem;
-    color: #94a3b8; /* Slate 400 */
-    line-height: 1.7;
+    color: #94a3b8;
+    font-size: 1rem;
+    line-height: 1.6;
     margin: 0;
-}
-
-.footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer-links a {
-    color: #cbd5e1; /* Slate 300 */
-    text-decoration: none;
-    font-size: 0.95rem;
-    transition: color 0.2s ease;
-}
-
-.footer-links a:hover {
-    color: #ffffff;
 }
 
 .footer-divider {
     height: 1px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #1e293b;
     margin-bottom: 40px;
 }
 
@@ -1168,22 +1158,19 @@ body {
 }
 
 .footer-disclaimer {
-    font-size: 0.75rem;
-    color: #64748b; /* Slate 500 */
+    font-size: 0.875rem;
+    color: #64748b;
     line-height: 1.6;
     margin: 0;
-    max-width: 950px;
-}
-
-.footer-disclaimer strong {
-    color: #94a3b8;
 }
 
 .footer-copyright {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     color: #64748b;
     margin: 0;
 }
+
+
 
 /* Responsive Grid Layouts */
 @media (max-width: 950px) {
@@ -1203,7 +1190,7 @@ body {
     }
 
     .footer-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
         gap: 48px;
     }
 }
