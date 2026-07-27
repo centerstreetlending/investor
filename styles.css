@@ -328,7 +328,7 @@ body {
 }
 
 .approach-container {
-    max-width: 1300px; /* Wider container for 4 columns */
+    max-width: 1100px; /* Matched to strategies and leadership grid width */
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -800,7 +800,6 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 32px;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
