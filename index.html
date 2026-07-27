@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css?v=2.09">
+    <link rel="stylesheet" href="styles.css?v=2.10">
 </head>
 <body>
 
@@ -38,13 +38,28 @@
                 </a>
             </div>
             
-            <!-- Right: Navigation Links -->
-            <div style="display: flex; align-items: center; gap: 40px;">
+            <!-- Right: Navigation Links (Desktop) -->
+            <div class="desktop-nav" style="display: flex; align-items: center; gap: 40px;">
                 <a href="#" class="nav-link">Who we are</a>
                 <a href="#" class="nav-link">Who we serve</a>
             </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="#" class="mobile-nav-link">Who we are</a>
+            <a href="#" class="mobile-nav-link">Who we serve</a>
+        </div>
+    </div>
 
 
     <main>
@@ -291,6 +306,31 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            if (hamburgerBtn && mobileMenu) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('active');
+                    mobileMenu.classList.toggle('open');
+                    document.body.classList.toggle('no-scroll');
+                });
+
+                // Close menu when a link is clicked
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('active');
+                        mobileMenu.classList.remove('open');
+                        document.body.classList.remove('no-scroll');
+                    });
+                });
+            }
+        });
+    </script>
     <!-- Investor Type Modal -->
     <div id="investor-modal" class="modal">
         <div class="modal-content">

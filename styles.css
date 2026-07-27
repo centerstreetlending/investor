@@ -1344,3 +1344,149 @@ body {
         display: none;
     }
 }
+
+/* --- Mobile Navigation --- */
+.hamburger-btn {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001; /* Above mobile menu */
+}
+
+.hamburger-btn span {
+    width: 30px;
+    height: 2px;
+    background: #0f172a;
+    border-radius: 2px;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+
+.hamburger-btn.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+.hamburger-btn.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-btn.active span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffff;
+    z-index: 1000;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-menu.open {
+    transform: translateY(0);
+}
+
+.mobile-menu-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.mobile-nav-link {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+    color: #4683b3;
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+/* --- Mobile UX Overhaul --- */
+@media (max-width: 768px) {
+    /* Nav */
+    .desktop-nav {
+        display: none !important;
+    }
+    .hamburger-btn {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero {
+        padding: 120px 0 80px;
+    }
+    .hero-title {
+        font-size: 2.25rem;
+    }
+    .hero-subtitle {
+        font-size: 1.05rem;
+    }
+    .hero-buttons-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+    .btn-group-primary, .btn-group-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Padding & Spacing for major sections */
+    .approach-section,
+    .strategies-section,
+    .leadership-section {
+        padding: 60px 0;
+    }
+    
+    .cta-section {
+        padding: 80px 0;
+    }
+    .main-footer {
+        padding: 60px 0 40px;
+    }
+
+    /* Typography */
+    .approach-title,
+    .strategies-title,
+    .leadership-title,
+    .cta-title {
+        font-size: 1.75rem;
+    }
+
+    /* Grids */
+    .approach-grid,
+    .strategies-grid,
+    .leadership-grid,
+    .footer-grid,
+    .modal-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+    
+    /* Footer layout */
+    .footer-col-left, .footer-col-right {
+        max-width: 100%;
+        text-align: left;
+    }
+}
