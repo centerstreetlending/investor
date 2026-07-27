@@ -56,10 +56,11 @@ body {
 }
 
 .top-bar-link {
-    font-size: 0.85rem;
-    font-weight: 500;
+    font-size: var(--text-xs); /* 12px for top utility nav */
+    font-weight: 600;
     color: #111827; /* Black text */
     text-decoration: none;
+    letter-spacing: 0.5px; /* Slight tracking for small bold text */
     transition: color 0.2s ease;
 }
 
@@ -122,11 +123,11 @@ body {
 }
 
 .nav-link {
-    color: #111827; /* Black text */
+    color: #111827; /* Strong black text */
     text-decoration: none;
-    font-size: 0.8rem; /* Smaller font size */
+    font-size: 0.95rem; /* ~15px is the sweet spot for modern nav readability */
     font-weight: 500;
-    letter-spacing: 1.5px; /* Added letter spacing */
+    letter-spacing: 0; /* Removed wide tracking: sentence case requires tight tracking */
     transition: color 0.2s ease;
 }
 
