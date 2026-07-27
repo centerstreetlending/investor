@@ -145,8 +145,8 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 60px; /* Reduced bottom padding */
-    background-color: #0f172a; /* Dark navy background */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.65), rgba(15, 23, 42, 0.65)), url('shutterstock_1869821155_1.webp');
+    background-color: transparent; /* Remove solid navy */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('shutterstock_1869821155_1.webp');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -162,7 +162,7 @@ body {
 }
 
 .hero-kicker {
-    color: #4683b3; /* Brand blue accent */
+    color: #f26522; /* Vibrant orange accent */
     background-color: transparent;
     border: none;
     padding: 0;
@@ -189,15 +189,15 @@ body {
 
 .hero-title-line-2 {
     display: block;
-    padding-left: 1.5em; /* Staggered indent for the second line */
+    /* Removed staggered indent */
 }
 
 .hero-subtitle {
     font-size: 1.15rem;
-    color: #ffffff; /* White text for maximum contrast */
+    color: #e2e8f0; /* Light slate for contrast */
     line-height: 1.6;
     margin-bottom: 48px;
-    max-width: 550px; /* Bounded width like mockup */
+    max-width: 700px; /* Wider bounded width */
 }
 
 .hero-divider {
@@ -219,9 +219,9 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 0; /* Sharp corporate rectangles */
+    border-radius: 6px; /* Soft corporate rectangles */
     text-transform: none; /* Standard casing */
-    background-color: #4683b3; /* Brand blue */
+    background-color: #f26522; /* Vibrant orange */
     color: #ffffff;
     border: none;
     display: inline-flex;
@@ -230,7 +230,7 @@ body {
 }
 
 .btn-group-primary:hover {
-    background-color: #366b96;
+    background-color: #d95a1e;
 }
 
 .btn-group-secondary {
@@ -240,15 +240,15 @@ body {
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 0; /* Sharp corporate rectangles */
+    border-radius: 6px; /* Soft corporate rectangles */
     text-transform: none;
-    background-color: rgba(255, 255, 255, 0.05); /* Slight fill */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle translucent fill */
     color: #ffffff; /* White text */
-    border: 1px solid #ffffff; /* Solid white outline */
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Thinner translucent white outline */
 }
 
 .btn-group-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.15); /* Brighter fill on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Brighter fill on hover */
 }
 
 .hero-buttons {
