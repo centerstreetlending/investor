@@ -145,7 +145,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 120px 0 60px; /* Reduced bottom padding */
-    background-color: transparent; /* Remove solid navy */
+    background-color: #475569; /* Solid grey backdrop */
     position: relative;
     overflow: hidden; /* Hide overflow from video */
 }
