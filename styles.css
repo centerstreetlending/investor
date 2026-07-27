@@ -324,7 +324,7 @@ body {
 /* Approach Section */
 .approach-section {
     background-color: #f8fafc; /* Very light slate/grey */
-    padding: 80px 0; /* Perfectly even top and bottom spacing */
+    padding: 100px 0; /* Standardized to 100px */
 }
 
 .approach-container {
@@ -340,19 +340,19 @@ body {
 
 .section-kicker {
     color: #f26522; /* Vibrant orange accent */
-    font-size: var(--text-xs);
+    font-size: 0.875rem; /* Standardized size */
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin-bottom: 8px; /* Tighter spacing to the header */
+    margin-bottom: 16px; /* Increased for better visual breathing room */
 }
 
 .approach-title {
-    font-size: 2rem; /* Exact match to .section-title */
+    font-size: 2.5rem; /* Standardized impact heading size */
     font-weight: 700;
-    color: #111827; /* Standardized black to match .section-title */
+    color: #0f172a; /* Standardized deep slate */
     line-height: 1.2;
-    letter-spacing: -0.01em; /* Match letter spacing */
+    letter-spacing: -0.02em; /* Unified tracking */
     margin: 0;
 }
 
@@ -370,6 +370,12 @@ body {
     border: 1px solid #f1f5f9;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .approach-icon {
@@ -782,11 +788,11 @@ body {
 }
 
 .strategies-title {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Standardized impact heading size */
     font-weight: 700;
-    color: #111827;
+    color: #0f172a; /* Standardized deep slate */
     line-height: 1.2;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
     margin-bottom: 16px;
 }
 
@@ -809,6 +815,13 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    background-color: #ffffff;
+}
+
+.strategy-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .strategy-card-header {
