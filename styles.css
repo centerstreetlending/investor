@@ -154,7 +154,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 180px 0 120px; /* Stretched hero taller */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('shutterstock_1869821155_1.webp');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('vitaly-gariev-ob1oe1CGQ1s-unsplash.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
