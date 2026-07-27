@@ -144,7 +144,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 120px 0 60px; /* Reduced bottom padding */
+    padding: 180px 0 120px; /* Stretched hero taller */
     background-color: #475569; /* Solid grey backdrop */
     position: relative;
     overflow: hidden; /* Hide overflow from video */
@@ -184,21 +184,20 @@ body {
     background-color: transparent;
     border: none;
     padding: 0;
-    font-size: 0.8rem;
-    font-weight: 600;
-    letter-spacing: 2px; /* Tighter letter spacing to match mockup */
-    text-transform: uppercase;
-    margin-bottom: 24px; /* Tighter spacing to massive title */
+    font-size: 0.75rem; /* Scaled down */
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
     display: inline-block;
 }
 
 .hero-title {
-    font-size: 4.5rem; /* Massive scale from mockup */
-    line-height: 1.05; /* Tighter line height for large text */
+    font-size: 3.75rem; /* Scaled down from 4.5rem */
+    line-height: 1.1; /* Tighter line height for large text */
     font-weight: 700;
     color: #ffffff; /* White text */
     margin-bottom: 32px;
-    letter-spacing: -0.02em; /* Tighter tracking */
+    letter-spacing: -1px; /* Tighter tracking */
 }
 
 .hero-title-line-1 {
@@ -211,11 +210,11 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.15rem;
+    font-size: 1rem; /* Scaled down from 1.15rem */
     color: #e2e8f0; /* Light slate for contrast */
     line-height: 1.6;
     margin-bottom: 48px;
-    max-width: 700px; /* Wider bounded width */
+    max-width: 600px; /* Adjusted bounding box for smaller text */
 }
 
 .hero-divider {
@@ -231,9 +230,9 @@ body {
 }
 
 .btn-group-primary {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly scaled down text */
     font-weight: 600;
-    padding: 16px 36px;
+    padding: 14px 28px; /* Slightly scaled down padding */
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -252,9 +251,9 @@ body {
 }
 
 .btn-group-secondary {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Slightly scaled down text */
     font-weight: 600;
-    padding: 16px 36px;
+    padding: 14px 28px; /* Slightly scaled down padding */
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
