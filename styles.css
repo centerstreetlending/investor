@@ -336,6 +336,15 @@ body {
     text-align: center;
 }
 
+.section-kicker {
+    color: #f26522; /* Vibrant orange accent */
+    font-size: var(--text-xs);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
 .approach-title {
     font-size: var(--text-4xl);
     font-weight: 700;
