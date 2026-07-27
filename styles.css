@@ -764,6 +764,168 @@ body {
     font-weight: 400;
 }
 
+/* Strategies Section */
+.strategies-section {
+    background-color: #ffffff;
+    padding: 100px 0;
+}
+
+.strategies-header {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.strategies-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 16px;
+}
+
+.strategies-subtitle {
+    font-size: 1.125rem;
+    color: #64748b;
+    margin: 0;
+}
+
+.strategies-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.strategy-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.strategy-card-header {
+    background-color: #f8fafc;
+    padding: 24px 32px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.strategy-kicker {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.strategy-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.strategy-card-body {
+    background-color: #ffffff;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.strategy-desc {
+    font-size: 1rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.strategy-callout {
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 32px;
+}
+
+.orange-callout {
+    background-color: #fff7ed;
+}
+
+.orange-callout .callout-title {
+    color: #f26522;
+}
+
+.slate-callout {
+    background-color: #f1f5f9;
+}
+
+.slate-callout .callout-title {
+    color: #1e293b;
+}
+
+.callout-title {
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.callout-text {
+    font-size: 0.875rem;
+    color: #334155;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.strategy-details {
+    margin-bottom: 32px;
+    margin-top: auto; /* Push details to the bottom if desc is short */
+}
+
+.strategy-detail-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.strategy-detail-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detail-label {
+    font-size: 0.875rem;
+    color: #94a3b8;
+}
+
+.detail-value {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #334155;
+    text-align: right;
+}
+
+.strategy-link {
+    color: #f26522;
+    font-size: 0.875rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    margin-top: auto; /* Push link to very bottom */
+}
+
+.strategy-link:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 900px) {
+    .strategies-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* CTA Section */
 .cta-section {
     padding: 60px 0;
