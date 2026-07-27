@@ -56,7 +56,7 @@ body {
 }
 
 .top-bar-link {
-    font-size: var(--text-xs); /* 12px for top utility nav */
+    font-size: var(--text-sm); /* Bumped up for better readability */
     font-weight: 600;
     color: #111827; /* Black text */
     text-decoration: none;
