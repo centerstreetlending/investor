@@ -154,7 +154,9 @@ body {
 /* Hero Section */
 .hero {
     padding: 180px 0 120px; /* Stretched hero taller */
-    background-color: #475569; /* Solid grey backdrop */
+    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('shutterstock_1869821155_1.webp');
+    background-size: cover;
+    background-position: center;
     position: relative;
     overflow: hidden; /* Hide overflow from video */
 }
