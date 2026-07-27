@@ -146,10 +146,28 @@ body {
 .hero {
     padding: 120px 0 60px; /* Reduced bottom padding */
     background-color: transparent; /* Remove solid navy */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('shutterstock_1869821155_1.webp');
-    background-size: cover;
-    background-position: center;
     position: relative;
+    overflow: hidden; /* Hide overflow from video */
+}
+
+.hero-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    z-index: 1;
 }
 
 .hero-content {
