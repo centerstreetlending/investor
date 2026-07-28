@@ -1468,7 +1468,10 @@ body.no-scroll {
 /* About Hero Section */
 .about-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
-    background-color: #ffffff;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), url('pexels-tracvu-7109805.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
 }
 
 .about-hero-content {
@@ -1487,7 +1490,7 @@ body.no-scroll {
 .about-title {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #0f172a;
+    color: #ffffff;
     line-height: 1.15;
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px;
@@ -1496,7 +1499,7 @@ body.no-scroll {
 
 .about-desc {
     font-size: 1.25rem;
-    color: #475569;
+    color: #e2e8f0;
     line-height: 1.6;
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px;
