@@ -274,6 +274,25 @@
                     });
                 });
             }
+
+            // Sub-nav smooth scroll and active state handling
+            const subNavLinks = document.querySelectorAll('.sub-nav-link');
+            subNavLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        // Update active state
+                        subNavLinks.forEach(l => l.classList.remove('active'));
+                        link.classList.add('active');
+                        
+                        // Scroll to section
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+            });
         });
     </script>
     <!-- Investor Type Modal -->

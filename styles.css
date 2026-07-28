@@ -1440,8 +1440,12 @@ body.no-scroll {
 /* --- Who We Are Page --- */
 /* Secondary Navigation */
 .sub-nav {
+    position: sticky;
+    top: 59px; /* Sits exactly below the main sticky header */
+    z-index: 900;
     border-bottom: 1px solid #e2e8f0;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
 }
 
 .sub-nav-container {
@@ -1956,11 +1960,16 @@ body.no-scroll {
 
     /* Who We Are Page */
     .sub-nav-container {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: white;
         gap: 20px;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        padding-bottom: 12px;
+        padding: 12px 0;
+        border-bottom: 1px solid #e2e8f0;
     }
     .about-hero {
         padding: 40px 0 60px; /* Offset by 40px to account for kicker height */
