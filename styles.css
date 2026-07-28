@@ -1592,6 +1592,18 @@ body.no-scroll {
     text-transform: uppercase;
 }
 
+.strategy-summary-block {
+    max-width: 800px;
+    margin: 80px auto 0;
+    text-align: center;
+}
+
+.strategy-summary-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
 /* --- Mobile UX Overhaul --- */
 @media (max-width: 768px) {
     /* Nav */
