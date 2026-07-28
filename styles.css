@@ -1774,6 +1774,40 @@ body.no-scroll {
     max-width: 800px;
 }
 
+/* --- Diligence CTA Section --- */
+.diligence-cta-section {
+    padding: 80px 0 120px;
+    background-color: #f8f9fa; /* Matches grey block at top of mockup */
+    border-top: 1px solid #e2e8f0;
+}
+
+.diligence-card {
+    border: 1px solid #e7e5e4; /* slightly warmer grey border like mockup */
+    background-color: #ffffff;
+    padding: 64px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.diligence-text {
+    font-size: 1.25rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 40px;
+}
+
+.diligence-link {
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #94a3b8; /* light slate */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.diligence-link:hover {
+    color: #f26522; /* orange on hover */
+}
+
 /* --- Mobile UX Overhaul --- */
 @media (max-width: 768px) {
     /* Nav */
@@ -1837,6 +1871,14 @@ body.no-scroll {
     }
 
     .governance-card {
+        padding: 32px 24px;
+    }
+
+    .diligence-cta-section {
+        padding: 60px 0;
+    }
+
+    .diligence-card {
         padding: 32px 24px;
     }
 
