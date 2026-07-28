@@ -172,7 +172,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('vitaly-gariev-ob1oe1CGQ1s-unsplash.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
