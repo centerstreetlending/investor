@@ -209,18 +209,6 @@ body {
 }
 
 .hero-kicker {
-    color: #f26522; /* Vibrant orange accent */
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    font-size: 0.75rem; /* Scaled down */
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 24px;
-    display: inline-block;
-}
-
-.hero-kicker {
     margin-bottom: 24px;
 }
 
@@ -1481,6 +1469,15 @@ body.no-scroll {
 .about-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
     background-color: #ffffff;
+}
+
+.about-hero-content {
+    max-width: 900px;
+    margin: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .about-kicker {
