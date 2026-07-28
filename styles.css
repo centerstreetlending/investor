@@ -171,7 +171,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 180px 0 120px; /* Stretched hero taller */
+    padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
     background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('vitaly-gariev-ob1oe1CGQ1s-unsplash.jpg');
     background-size: cover;
     background-position: center;
@@ -218,6 +218,10 @@ body {
     letter-spacing: 2px;
     margin-bottom: 24px;
     display: inline-block;
+}
+
+.hero-kicker {
+    margin-bottom: 24px;
 }
 
 .hero-title {
@@ -1510,7 +1514,7 @@ body.no-scroll {
 
     /* Hero */
     .hero {
-        padding: 80px 0 60px;
+        padding: 40px 0 60px; /* Offset by 40px for kicker height */
     }
     .hero-content {
         align-items: center;
