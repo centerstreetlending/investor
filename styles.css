@@ -229,6 +229,7 @@ body {
     line-height: 1.15; /* Matching About hero */
     font-weight: 700;
     color: #ffffff; /* White text */
+    margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px; /* Matching About hero */
     letter-spacing: -0.02em; /* Matching About hero */
 }
@@ -246,6 +247,7 @@ body {
     font-size: 1.25rem; /* Matching About hero */
     color: #e2e8f0; /* Light slate for contrast */
     line-height: 1.6;
+    margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px; /* Matching About hero */
     max-width: 700px; /* Matching About hero */
 }
@@ -1490,6 +1492,7 @@ body.no-scroll {
     font-weight: 700;
     color: #0f172a;
     line-height: 1.15;
+    margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px;
     letter-spacing: -0.02em;
 }
@@ -1498,6 +1501,7 @@ body.no-scroll {
     font-size: 1.25rem;
     color: #475569;
     line-height: 1.6;
+    margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px;
     max-width: 700px;
 }
