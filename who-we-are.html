@@ -30,6 +30,7 @@
             <div class="desktop-nav" style="display: flex; align-items: center; gap: 40px;">
                 <a href="who-we-are.html" class="nav-link">Who we are</a>
                 <a href="#" class="nav-link">Who we serve</a>
+                <a href="#" class="nav-btn request-access-btn">Request Access</a>
             </div>
 
             <!-- Hamburger Button (Mobile) -->
@@ -46,6 +47,7 @@
         <div class="mobile-menu-inner">
             <a href="who-we-are.html" class="mobile-nav-link">Who we are</a>
             <a href="#" class="mobile-nav-link">Who we serve</a>
+            <a href="#" class="nav-btn request-access-btn" style="margin-top: 20px; font-size: 1.25rem; padding: 12px 32px;">Request Access</a>
         </div>
     </div>
 
@@ -125,5 +127,53 @@
             }
         });
     </script>
+    <!-- Investor Type Modal -->
+    <div id="investor-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 class="modal-title">Select Your Investor Type</h2>
+            
+            <div class="modal-grid">
+                <!-- Card 1 -->
+                <div class="investor-card">
+                    <h3>Institutional Investor</h3>
+                    <p>You may represent or be a:</p>
+                    <ul>
+                        <li>Pension fund</li>
+                        <li>Insurance provider</li>
+                        <li>Investment consultant</li>
+                    </ul>
+                    <a href="#" class="card-btn">Select Profile</a>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="investor-card">
+                    <h3>Individual Investor</h3>
+                    <p>You may be a:</p>
+                    <ul>
+                        <li>Private investor</li>
+                        <li>Client of an investment advisor, wealth manager or private bank</li>
+                    </ul>
+                    <a href="#" class="card-btn">Select Profile</a>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="investor-card">
+                    <h3>Financial Intermediary</h3>
+                    <p>You may represent or be a:</p>
+                    <ul>
+                        <li>Registered investment advisor</li>
+                        <li>Independent broker-dealer</li>
+                        <li>Wirehouse</li>
+                        <li>Wealth manager</li>
+                        <li>Private bank</li>
+                    </ul>
+                    <a href="#" class="card-btn">Select Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=1.1"></script>
 </body>
 </html>

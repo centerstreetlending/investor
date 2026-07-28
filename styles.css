@@ -135,6 +135,24 @@ body {
     color: #4683b3; /* Brand blue hover */
 }
 
+.nav-btn {
+    color: #0f172a;
+    background-color: transparent;
+    border: 1px solid #0f172a;
+    text-decoration: none;
+    padding: 10px 24px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #0f172a;
+    color: #ffffff;
+}
+
 .investors-btn {
     color: #4683b3; /* Branded blue text */
     background-color: transparent;
