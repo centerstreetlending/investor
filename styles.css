@@ -1960,16 +1960,15 @@ body.no-scroll {
 
     /* Who We Are Page */
     .sub-nav-container {
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        background: white;
-        gap: 20px;
+        justify-content: center;
+        gap: 16px;
+        padding: 16px 20px;
         overflow-x: auto;
         white-space: nowrap;
         -webkit-overflow-scrolling: touch;
-        padding: 12px 0;
-        border-bottom: 1px solid #e2e8f0;
+    }
+    .sub-nav-link {
+        font-size: 0.75rem;
     }
     .about-hero {
         padding: 40px 0 60px; /* Offset by 40px to account for kicker height */
