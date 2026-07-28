@@ -1694,6 +1694,17 @@ body.no-scroll {
     opacity: 0.8;
 }
 
+.leadership-footer-text {
+    text-align: center;
+    font-size: 1rem;
+    color: #64748b;
+    font-style: italic;
+    margin-top: 60px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* --- Mobile UX Overhaul --- */
 @media (max-width: 768px) {
     /* Nav */
