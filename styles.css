@@ -1604,6 +1604,96 @@ body.no-scroll {
     color: #475569;
 }
 
+/* --- Leadership Section --- */
+.leadership-section {
+    padding: 100px 0 120px;
+    background-color: #ffffff;
+    border-top: 1px solid #e2e8f0; /* subtle separator from previous section */
+}
+
+.leadership-header-block {
+    max-width: 800px;
+    margin-bottom: 80px;
+}
+
+.leadership-kicker {
+    color: #eab308; /* gold */
+    margin-bottom: 24px;
+}
+
+.leadership-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+}
+
+.leadership-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1000px;
+}
+
+.team-card {
+    border: 1px solid #e2e8f0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-photo-placeholder {
+    height: 380px;
+    background-color: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fcd34d; /* light yellow text */
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+.team-card-content {
+    padding: 32px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.team-name {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0;
+}
+
+.team-role {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #eab308; /* gold */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
+}
+
+.team-bio-link {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3b82f6; /* bright blue */
+    text-decoration: none;
+    transition: opacity 0.2s ease;
+}
+
+.team-bio-link:hover {
+    opacity: 0.8;
+}
+
 /* --- Mobile UX Overhaul --- */
 @media (max-width: 768px) {
     /* Nav */
@@ -1643,6 +1733,23 @@ body.no-scroll {
     .stats-grid {
         grid-template-columns: 1fr;
         gap: 40px;
+    }
+
+    .leadership-section {
+        padding: 60px 0;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .team-photo-placeholder {
+        height: 300px;
+    }
+
+    .team-card-content {
+        padding: 24px;
     }
 
     .hero-title {
