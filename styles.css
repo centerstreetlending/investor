@@ -221,12 +221,13 @@ body {
 }
 
 .hero-title {
-    font-size: 3.75rem; /* Scaled down from 4.5rem */
-    line-height: 1.1; /* Tighter line height for large text */
+    font-family: 'Merriweather', serif; /* Matching About hero */
+    font-size: 3.5rem; /* Matching About hero */
+    line-height: 1.15; /* Matching About hero */
     font-weight: 700;
     color: #ffffff; /* White text */
-    margin-bottom: 16px; /* Tighter spacing to subtitle */
-    letter-spacing: -1px; /* Tighter tracking */
+    margin-bottom: 32px; /* Matching About hero */
+    letter-spacing: -0.02em; /* Matching About hero */
 }
 
 .hero-title-line-1 {
@@ -239,11 +240,11 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1rem; /* Scaled down from 1.15rem */
+    font-size: 1.25rem; /* Matching About hero */
     color: #e2e8f0; /* Light slate for contrast */
     line-height: 1.6;
-    margin-bottom: 32px; /* Tighter spacing to buttons */
-    max-width: 600px; /* Adjusted bounding box for smaller text */
+    margin-bottom: 64px; /* Matching About hero */
+    max-width: 700px; /* Matching About hero */
 }
 
 .hero-divider {
@@ -1528,10 +1529,11 @@ body.no-scroll {
         text-align: center;
     }
     .hero-subtitle {
-        font-size: 1.05rem;
+        font-size: 1.125rem;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
+        margin-bottom: 40px;
     }
     .hero-buttons-group {
         flex-direction: column;
