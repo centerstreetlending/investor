@@ -1513,6 +1513,7 @@ body.no-scroll {
 .firm-overview {
     padding: 100px 0 120px;
     background-color: #ffffff;
+    scroll-margin-top: 140px; /* Offset for sticky navs */
 }
 
 .overview-header-block {
@@ -1609,6 +1610,7 @@ body.no-scroll {
     padding: 100px 0 120px;
     background-color: #ffffff;
     border-top: 1px solid #e2e8f0; /* subtle separator from previous section */
+    scroll-margin-top: 140px; /* Offset for sticky navs */
 }
 
 .leadership-header-block {
@@ -1710,6 +1712,7 @@ body.no-scroll {
     padding: 100px 0 120px;
     background-color: #ffffff;
     border-top: 1px solid #e2e8f0;
+    scroll-margin-top: 140px; /* Offset for sticky navs */
 }
 
 .governance-header-block {
