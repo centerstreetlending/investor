@@ -172,7 +172,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), url('pexels-tracvu-7109805.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -210,6 +210,7 @@ body {
 
 .hero-kicker {
     margin-bottom: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title {
@@ -220,6 +221,7 @@ body {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px; /* Matching About hero */
     letter-spacing: -0.02em; /* Matching About hero */
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title-line-1 {
@@ -238,6 +240,7 @@ body {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px; /* Matching About hero */
     max-width: 700px; /* Matching About hero */
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-divider {
@@ -282,9 +285,10 @@ body {
     cursor: pointer;
     border-radius: 6px; /* Soft corporate rectangles */
     text-transform: none;
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle translucent fill */
+    background-color: rgba(255, 255, 255, 0.08); /* Subtle translucent fill */
     color: #ffffff; /* White text */
-    border: 1px solid rgba(255, 255, 255, 0.4); /* Thinner translucent white outline */
+    border: 1px solid rgba(255, 255, 255, 0.8); /* Stronger white outline for pop */
+    backdrop-filter: blur(4px); /* Blur behind the button */
 }
 
 .btn-group-secondary:hover {
@@ -1468,7 +1472,7 @@ body.no-scroll {
 /* About Hero Section */
 .about-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.45), rgba(15, 23, 42, 0.45)), url('pexels-tracvu-7109805.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1485,6 +1489,7 @@ body.no-scroll {
 
 .about-kicker {
     margin-bottom: 24px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .about-title {
@@ -1495,6 +1500,7 @@ body.no-scroll {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px;
     letter-spacing: -0.02em;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .about-desc {
@@ -1504,6 +1510,7 @@ body.no-scroll {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px;
     max-width: 700px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 /* --- Mobile UX Overhaul --- */
