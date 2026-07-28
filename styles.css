@@ -1473,7 +1473,7 @@ body.no-scroll {
 
 /* About Hero Section */
 .about-hero {
-    padding: 100px 0;
+    padding: 180px 0 120px;
     background-color: #ffffff;
 }
 
@@ -1496,12 +1496,6 @@ body.no-scroll {
     line-height: 1.6;
     margin-bottom: 64px;
     max-width: 700px;
-}
-
-.about-divider {
-    height: 1px;
-    width: 100%;
-    background-color: #e2e8f0;
 }
 
 /* --- Mobile UX Overhaul --- */
@@ -1600,7 +1594,7 @@ body.no-scroll {
         padding-bottom: 12px;
     }
     .about-hero {
-        padding: 60px 0;
+        padding: 80px 0 60px;
     }
     .about-title {
         font-size: 2.25rem;
