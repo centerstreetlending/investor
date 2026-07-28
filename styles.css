@@ -1423,6 +1423,70 @@ body.no-scroll {
     overflow: hidden;
 }
 
+/* --- Who We Are Page --- */
+/* Secondary Navigation */
+.sub-nav {
+    border-bottom: 1px solid #e2e8f0;
+    background-color: #ffffff;
+}
+
+.sub-nav-container {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.sub-nav-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.2s ease;
+}
+
+.sub-nav-link:hover,
+.sub-nav-link.active {
+    color: #0f172a;
+}
+
+/* About Hero Section */
+.about-hero {
+    padding: 100px 0;
+    background-color: #ffffff;
+}
+
+.about-kicker {
+    margin-bottom: 24px;
+}
+
+.about-title {
+    font-family: 'Merriweather', serif; /* Premium editorial serif */
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    line-height: 1.15;
+    margin-bottom: 32px;
+    letter-spacing: -0.02em;
+}
+
+.about-desc {
+    font-size: 1.25rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 64px;
+    max-width: 700px;
+}
+
+.about-divider {
+    height: 1px;
+    width: 100%;
+    background-color: #e2e8f0;
+}
+
 /* --- Mobile UX Overhaul --- */
 @media (max-width: 768px) {
     /* Nav */
@@ -1507,5 +1571,24 @@ body.no-scroll {
     .footer-col-left, .footer-col-right {
         max-width: 100%;
         text-align: left;
+    }
+
+    /* Who We Are Page */
+    .sub-nav-container {
+        gap: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 12px;
+    }
+    .about-hero {
+        padding: 60px 0;
+    }
+    .about-title {
+        font-size: 2.25rem;
+    }
+    .about-desc {
+        font-size: 1.125rem;
+        margin-bottom: 40px;
     }
 }

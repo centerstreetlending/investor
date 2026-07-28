@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Who We Are | CSL Companies</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css?v=3.00">
+</head>
+<body>
+
+
+    <!-- Main Navigation -->
+    <header class="main-header">
+        <div class="nav-container">
+            <!-- Left: Logo -->
+            <div style="display: flex; align-items: center;">
+                <a href="index.html" class="logo">
+                    <img src="CS-Capital_Horiz_OnLight.svg" alt="Center Street Capital Logo" class="logo-image" style="height: 30px; width: auto; object-fit: contain;">
+                </a>
+            </div>
+            
+            <!-- Right: Navigation Links (Desktop) -->
+            <div class="desktop-nav" style="display: flex; align-items: center; gap: 40px;">
+                <a href="who-we-are.html" class="nav-link">Who we are</a>
+                <a href="#" class="nav-link">Who we serve</a>
+            </div>
+
+            <!-- Hamburger Button (Mobile) -->
+            <button class="hamburger-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu">
+        <div class="mobile-menu-inner">
+            <a href="who-we-are.html" class="mobile-nav-link">Who we are</a>
+            <a href="#" class="mobile-nav-link">Who we serve</a>
+        </div>
+    </div>
+
+
+    <main>
+        <!-- Secondary Navigation -->
+        <div class="sub-nav">
+            <div class="container sub-nav-container">
+                <a href="#overview" class="sub-nav-link active">OVERVIEW</a>
+                <a href="#leadership" class="sub-nav-link">LEADERSHIP</a>
+                <a href="#governance" class="sub-nav-link">GOVERNANCE</a>
+            </div>
+        </div>
+
+        <!-- About Hero Section -->
+        <section class="about-hero">
+            <div class="container about-hero-container">
+                <div class="section-kicker about-kicker">ABOUT US</div>
+                <h1 class="about-title">Cycle-tested underwriting, built for the lower middle market.</h1>
+                <p class="about-desc">[One to two sentences on origin, evolution to Center Street Capital, and what the firm was built to do.]</p>
+                <div class="about-divider"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container footer-container">
+            <div class="footer-grid">
+                <!-- Column 1 -->
+                <div class="footer-col footer-col-left">
+                    <h4 class="footer-heading">Center Street Capital</h4>
+                    <p class="footer-text">Private credit investment manager focused on rigorous underwriting and GP alignment across complementary strategies.</p>
+                </div>
+                <!-- Column 2 -->
+                <div class="footer-col footer-col-right">
+                    <h4 class="footer-heading">Contact</h4>
+                    <p class="footer-text">
+                        [Office Address]<br>
+                        [Phone Number]<br>
+                        ir@centerstreetcapital.com
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p class="footer-disclaimer">This website is for informational purposes only and does not constitute an offer to sell, or a solicitation of an offer to buy, any security. Any such offer will be made only by means of a confidential private placement memorandum to qualified, accredited investors. Past performance is not indicative of future results. Private credit investments involve substantial risk, including loss of principal, and are illiquid.</p>
+                <p class="footer-copyright">&copy; 2026 Center Street Capital. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const hamburgerBtn = document.querySelector('.hamburger-btn');
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+            
+            if (hamburgerBtn && mobileMenu) {
+                hamburgerBtn.addEventListener('click', () => {
+                    hamburgerBtn.classList.toggle('active');
+                    mobileMenu.classList.toggle('open');
+                    document.body.classList.toggle('no-scroll');
+                });
+
+                // Close menu when a link is clicked
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        hamburgerBtn.classList.remove('active');
+                        mobileMenu.classList.remove('open');
+                        document.body.classList.remove('no-scroll');
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html>
