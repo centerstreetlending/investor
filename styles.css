@@ -172,7 +172,7 @@ body {
 /* Hero Section */
 .hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -206,6 +206,15 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
+    /* New Glassmorphism Backdrop */
+    background-color: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 48px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .hero-kicker {
@@ -1472,7 +1481,7 @@ body.no-scroll {
 /* About Hero Section */
 .about-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
-    background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
+    background-image: linear-gradient(rgba(15, 23, 42, 0.35), rgba(15, 23, 42, 0.35)), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1485,6 +1494,15 @@ body.no-scroll {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    
+    /* New Glassmorphism Backdrop */
+    background-color: rgba(15, 23, 42, 0.45);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding: 48px;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 
 .about-kicker {
@@ -1530,6 +1548,13 @@ body.no-scroll {
     .hero-content {
         align-items: center;
         text-align: center;
+        padding: 32px 24px;
+    }
+    
+    .about-hero-content {
+        align-items: center;
+        text-align: center;
+        padding: 32px 24px;
     }
     .hero-title {
         font-size: 2.25rem;
