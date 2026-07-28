@@ -221,7 +221,6 @@ body {
 }
 
 .hero-title {
-    font-family: 'Merriweather', serif; /* Matching About hero */
     font-size: 3.5rem; /* Matching About hero */
     line-height: 1.15; /* Matching About hero */
     font-weight: 700;
@@ -1483,7 +1482,6 @@ body.no-scroll {
 }
 
 .about-title {
-    font-family: 'Merriweather', serif; /* Premium editorial serif */
     font-size: 3.5rem;
     font-weight: 700;
     color: #0f172a;
