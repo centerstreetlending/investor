@@ -211,7 +211,6 @@ body {
 
 .hero-kicker {
     margin-bottom: 24px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title {
@@ -222,7 +221,6 @@ body {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px; /* Matching About hero */
     letter-spacing: -0.02em; /* Matching About hero */
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .hero-title-line-1 {
@@ -241,7 +239,6 @@ body {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px; /* Matching About hero */
     max-width: 700px; /* Matching About hero */
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
 .hero-divider {
@@ -1491,7 +1488,6 @@ body.no-scroll {
 
 .about-kicker {
     margin-bottom: 24px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .about-title {
@@ -1502,7 +1498,6 @@ body.no-scroll {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 32px;
     letter-spacing: -0.02em;
-    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
 }
 
 .about-desc {
@@ -1512,7 +1507,89 @@ body.no-scroll {
     margin-top: 0; /* Reset for flex/block consistency */
     margin-bottom: 64px;
     max-width: 700px;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* --- Firm Overview Section --- */
+.firm-overview {
+    padding: 100px 0 120px;
+    background-color: #ffffff;
+}
+
+.overview-header-block {
+    max-width: 800px;
+    margin-bottom: 80px;
+}
+
+.firm-overview-kicker {
+    color: #eab308; /* gold/yellow matching wireframe */
+    margin-bottom: 24px;
+}
+
+.firm-overview-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 32px;
+}
+
+.firm-overview-text {
+    font-size: 1.125rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.overview-mission-block {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+    margin-bottom: 100px;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.mission-quote {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #1e293b;
+    font-style: italic;
+    border-left: 4px solid #a16207; /* bronze/gold matching wireframe */
+    padding-left: 32px;
+    margin: 0;
+    max-width: 900px;
+}
+
+.stats-grid-container {
+    border: 1px solid #e2e8f0;
+    padding: 64px;
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px 40px;
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stat-number {
+    font-size: 2.75rem;
+    font-weight: 700;
+    color: #3b82f6; /* bright blue */
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #64748b;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /* --- Mobile UX Overhaul --- */
@@ -1543,6 +1620,19 @@ body.no-scroll {
         align-items: center;
         text-align: center;
     }
+    .firm-overview {
+        padding: 60px 0;
+    }
+    
+    .stats-grid-container {
+        padding: 32px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
     .hero-title {
         font-size: 2.25rem;
         text-align: center;
