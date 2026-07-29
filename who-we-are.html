@@ -234,8 +234,36 @@
                 });
             }
 
-            // Sub-nav smooth scroll and active state handling
+            // Sub-nav scroll spy and offset-aware smooth scroll
             const subNavLinks = document.querySelectorAll('.sub-nav-link');
+            const sections = document.querySelectorAll('section[id]');
+            
+            if (sections.length > 0 && subNavLinks.length > 0) {
+                const observerOptions = {
+                    root: null,
+                    rootMargin: '-135px 0px -60% 0px',
+                    threshold: 0
+                };
+                
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            const currentId = entry.target.getAttribute('id');
+                            subNavLinks.forEach(link => {
+                                link.classList.remove('active');
+                                if (link.getAttribute('href') === '#' + currentId) {
+                                    link.classList.add('active');
+                                }
+                            });
+                        }
+                    });
+                }, observerOptions);
+                
+                sections.forEach(section => {
+                    observer.observe(section);
+                });
+            }
+
             subNavLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -243,12 +271,14 @@
                     const targetElement = document.querySelector(targetId);
                     
                     if (targetElement) {
-                        // Update active state
-                        subNavLinks.forEach(l => l.classList.remove('active'));
-                        link.classList.add('active');
+                        const headerOffset = 135; 
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                         
-                        // Scroll to section
-                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
                     }
                 });
             });
