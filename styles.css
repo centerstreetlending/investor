@@ -136,9 +136,9 @@ body {
 }
 
 .nav-btn {
-    color: #0f172a;
-    background-color: transparent;
-    border: 1px solid #0f172a;
+    color: #ffffff;
+    background-color: #f26522; /* Vibrant orange */
+    border: 1px solid #f26522;
     text-decoration: none;
     padding: 10px 24px;
     font-size: 0.9rem;
@@ -149,7 +149,8 @@ body {
 }
 
 .nav-btn:hover {
-    background-color: #0f172a;
+    background-color: #d95819; /* Darker orange on hover */
+    border-color: #d95819;
     color: #ffffff;
 }
 
