@@ -173,9 +173,7 @@ body {
 .hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
     /* Professional Left-to-Right Scrim Gradient */
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805.jpg');
-    background-color: #888888; /* Mid-grey background to blend luminosity against */
-    background-blend-mode: normal, luminosity; /* Normal for gradient, luminosity for image to turn it greyscale */
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805-gray.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1500,9 +1498,7 @@ body.no-scroll {
 .about-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
     /* Professional Left-to-Right Scrim Gradient */
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805.jpg');
-    background-color: #888888;
-    background-blend-mode: normal, luminosity; /* Normal for gradient, luminosity for image */
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805-gray.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
