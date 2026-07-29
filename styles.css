@@ -441,7 +441,7 @@ body {
 
 .strategies-header {
     margin-bottom: 48px;
-    /* Stacked left-aligned layout */
+    text-align: center;
 }
 
 .section-title {
@@ -1551,6 +1551,7 @@ body.no-scroll {
 
 .overview-header-block {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .overview-kicker {
@@ -1617,6 +1618,7 @@ body.no-scroll {
 .leadership-header-block {
     margin-bottom: 40px;
     scroll-margin-top: 140px;
+    text-align: center;
 }
 
 .leadership-title {
@@ -1663,6 +1665,7 @@ body.no-scroll {
 
 .serve-header-block {
     margin-bottom: 60px;
+    text-align: center;
 }
 
 .serve-kicker {
