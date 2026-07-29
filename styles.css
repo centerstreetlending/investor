@@ -73,7 +73,9 @@ body {
     background-color: #ffffff; /* Set header background to white */
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Subtle shadow for floating effect */
     border-bottom: 1px solid #f1f5f9; /* Delicate separating line */
-    padding: 14px 0; /* Slightly more padding for modern look */
+    height: 76px;
+    display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -1465,7 +1467,7 @@ body.no-scroll {
 /* Secondary Navigation */
 .sub-nav {
     position: sticky;
-    top: 72px; /* Sits exactly below the main sticky header */
+    top: 76px; /* Sits exactly below the 76px main sticky header */
     z-index: 900;
     border-bottom: 1px solid #e2e8f0;
     background-color: rgba(255, 255, 255, 0.95);
