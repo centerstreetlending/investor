@@ -1499,14 +1499,20 @@ body.no-scroll {
     color: #4683b3;
 }
 
-/* About Hero Section */
-.about-hero {
+.about-hero, .riviera-hero {
     padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
     /* Professional Left-to-Right Scrim Gradient */
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805-gray.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
+}
+
+.about-hero {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805-gray.jpg');
+}
+
+.riviera-hero {
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('shutterstock_1869821155_1.webp');
 }
 
 .about-hero-content {
