@@ -1479,6 +1479,7 @@ body.no-scroll {
 .sub-nav-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 32px;
     padding-top: 16px;
     padding-bottom: 16px;
