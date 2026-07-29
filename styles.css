@@ -895,7 +895,7 @@ body {
 }
 
 .strategy-desc {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #475569;
     line-height: 1.6;
     margin-bottom: 32px;
@@ -1603,7 +1603,7 @@ body.no-scroll {
 
 .overview-card-text {
     color: #475569;
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
     margin: 0;
 }
@@ -1725,7 +1725,7 @@ body.no-scroll {
 }
 
 .serve-card-sub {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #64748b;
     margin-bottom: 16px;
 }
@@ -1738,7 +1738,7 @@ body.no-scroll {
 }
 
 .serve-list li {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #475569;
     margin-bottom: 12px;
     padding-left: 16px;
@@ -1761,7 +1761,7 @@ body.no-scroll {
 }
 
 .serve-card-desc {
-    font-size: 0.95rem;
+    font-size: 1rem;
     color: #475569;
     line-height: 1.6;
     margin: 0;
