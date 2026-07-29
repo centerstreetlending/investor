@@ -791,7 +791,7 @@ body {
 }
 
 .strategies-container {
-    max-width: 1100px;
+    max-width: 1250px; /* Widened for 3 columns */
     margin: 0 auto;
     padding: 0 40px;
 }
@@ -802,9 +802,9 @@ body {
 }
 
 .strategies-title {
-    font-size: 2.5rem; /* Standardized impact heading size */
+    font-size: 2.5rem;
     font-weight: 700;
-    color: #0f172a; /* Standardized deep slate */
+    color: #0f172a;
     line-height: 1.2;
     letter-spacing: -0.02em;
     margin-bottom: 16px;
@@ -813,12 +813,13 @@ body {
 .strategies-subtitle {
     font-size: 1.125rem;
     color: #64748b;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 700px;
 }
 
 .strategies-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
     margin: 0 auto;
 }
@@ -829,8 +830,9 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
     background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .strategy-card:hover {
@@ -854,107 +856,127 @@ body {
 }
 
 .strategy-title {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: #0f172a;
     margin: 0;
+    line-height: 1.3;
 }
 
 .strategy-card-body {
-    background-color: #ffffff;
     padding: 32px;
     display: flex;
     flex-direction: column;
     flex: 1;
 }
 
+.strategy-brand {
+    margin-bottom: 16px;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+.brand-sub {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.brand-main {
+    font-weight: 700;
+    color: #0f172a;
+}
+
+.brand-light {
+    font-weight: 300;
+    color: #64748b;
+}
+
 .strategy-desc {
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: #475569;
     line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.strategy-stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 32px;
+    margin-top: auto; /* Push down to bottom of content area */
+}
+
+.stat-box {
+    background-color: #f8fafc;
+    border-radius: 6px;
+    padding: 16px;
+    text-align: center;
+}
+
+.stat-box.full-width {
+    grid-column: span 2;
+}
+
+.stat-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.strategy-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 0 0 24px 0;
+}
+
+.risk-return-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.orange-kicker {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #f26522; /* Vibrant orange */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.risk-return-text {
+    font-size: 0.875rem;
+    color: #334155;
+    line-height: 1.5;
     margin-bottom: 24px;
 }
 
-.strategy-callout {
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 32px;
-}
-
-.orange-callout {
-    background-color: #fff7ed;
-}
-
-.orange-callout .callout-title {
-    color: #f26522;
-}
-
-.slate-callout {
-    background-color: #f1f5f9;
-}
-
-.slate-callout .callout-title {
-    color: #1e293b;
-}
-
-.callout-title {
-    font-size: 0.875rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-}
-
-.callout-text {
-    font-size: 0.875rem;
-    color: #334155;
-    line-height: 1.6;
-    margin: 0;
-}
-
-.strategy-details {
-    margin-bottom: 32px;
-    margin-top: auto; /* Push details to the bottom if desc is short */
-}
-
-.strategy-detail-row {
-    display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid #f1f5f9;
-}
-
-.strategy-detail-row:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
-}
-
-.detail-label {
-    font-size: 0.875rem;
-    color: #94a3b8;
-}
-
-.detail-value {
-    font-size: 0.875rem;
-    font-weight: 600;
-    color: #334155;
-    text-align: right;
-}
-
-.strategy-link {
+.explore-link {
     color: #f26522;
     font-size: 0.875rem;
     font-weight: 700;
     text-decoration: none;
     transition: opacity 0.2s;
-    margin-top: auto; /* Push link to very bottom */
+    display: inline-block;
+    margin-top: auto;
 }
 
-.strategy-link:hover {
+.explore-link:hover {
     opacity: 0.8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
     .strategies-grid {
         grid-template-columns: 1fr;
+        max-width: 600px;
     }
 }
 
