@@ -1543,6 +1543,12 @@ body.no-scroll {
     scroll-margin-top: 140px; /* Offset for sticky navs */
 }
 
+.overview-container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
 .overview-header-block {
     margin-bottom: 60px;
 }
