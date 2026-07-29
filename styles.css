@@ -1655,6 +1655,104 @@ body.no-scroll {
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
 }
 
+/* --- Who We Serve Section --- */
+.who-we-serve-section {
+    padding: 100px 0 120px;
+    background-color: #ffffff;
+}
+
+.serve-header-block {
+    margin-bottom: 60px;
+}
+
+.serve-kicker {
+    color: #f26522; /* Vibrant orange */
+    margin-bottom: 16px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.serve-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+    line-height: 1.2;
+}
+
+.serve-subtitle {
+    font-size: 1.125rem;
+    color: #475569;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.serve-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.serve-card {
+    background-color: #f8fafc;
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.serve-card-title {
+    font-size: 1.25rem;
+    color: #0f172a;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.serve-card-sub {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 16px;
+}
+
+.serve-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 32px 0;
+    flex-grow: 1; /* Pushes the divider down so they align nicely if heights differ */
+}
+
+.serve-list li {
+    font-size: 0.95rem;
+    color: #475569;
+    margin-bottom: 12px;
+    padding-left: 16px;
+    position: relative;
+    line-height: 1.4;
+}
+
+.serve-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #64748b;
+}
+
+.serve-divider {
+    border: 0;
+    height: 1px;
+    background-color: #e2e8f0;
+    margin: 0 0 32px 0;
+}
+
+.serve-card-desc {
+    font-size: 0.95rem;
+    color: #475569;
+    line-height: 1.6;
+    margin: 0;
+}
+
 .team-avatar {
     width: 56px;
     height: 56px;
@@ -1882,7 +1980,8 @@ body.no-scroll {
     /* Padding & Spacing for major sections */
     .approach-section,
     .strategies-section,
-    .leadership-section {
+    .leadership-section,
+    .who-we-serve-section {
         padding: 60px 0;
     }
     
@@ -1911,7 +2010,9 @@ body.no-scroll {
     .strategies-grid,
     .leadership-grid,
     .footer-grid,
-    .modal-grid {
+    .modal-grid,
+    .serve-grid,
+    .overview-grid {
         grid-template-columns: 1fr;
         gap: 24px;
     }
