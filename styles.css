@@ -134,8 +134,9 @@ body {
     transition: color 0.2s ease;
 }
 
-.nav-link:hover {
-    color: #4683b3; /* Brand blue hover */
+.nav-link:hover,
+.nav-link.active {
+    color: #4683b3; /* Brand blue hover and active state */
 }
 
 .nav-btn {
