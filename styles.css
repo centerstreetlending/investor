@@ -1465,7 +1465,7 @@ body.no-scroll {
 /* Secondary Navigation */
 .sub-nav {
     position: sticky;
-    top: 59px; /* Sits exactly below the main sticky header */
+    top: 72px; /* Sits exactly below the main sticky header */
     z-index: 900;
     border-bottom: 1px solid #e2e8f0;
     background-color: rgba(255, 255, 255, 0.95);
