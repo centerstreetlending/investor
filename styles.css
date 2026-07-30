@@ -1275,14 +1275,15 @@ body {
 }
 
 .modal-content {
-    background-color: #f8fafc;
+    background-color: #ffffff;
     padding: 60px;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 90%;
-    max-width: 1200px;
+    max-width: 1100px;
     position: relative;
     transform: translateY(20px);
     transition: transform 0.3s ease;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
 .modal.active .modal-content {
@@ -1290,11 +1291,11 @@ body {
 }
 
 .close-modal {
-    color: #64748b;
+    color: #94a3b8;
     position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 36px;
+    top: 24px;
+    right: 32px;
+    font-size: 32px;
     font-weight: 300;
     cursor: pointer;
     transition: color 0.2s;
@@ -1305,81 +1306,96 @@ body {
 }
 
 .modal-title {
-    font-size: 2.25rem;
-    color: #1e293b;
-    margin-bottom: 40px;
-    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin: 0 0 40px 0;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
 }
 
 .modal-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 32px;
 }
 
 .investor-card {
-    background-color: #f1f5f9; /* Cleaner slate */
-    padding: 40px 30px;
+    background-color: #ffffff; 
+    padding: 32px;
     position: relative;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
     display: flex;
     flex-direction: column;
-    border: 1px solid transparent;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.02);
 }
 
 .investor-card:hover {
-    background-color: #ffffff;
-    border-color: #bca071; /* Branded tan accent */
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-    transform: translateY(-4px);
+    border-color: #f26522; /* Branded orange accent */
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    transform: translateY(-2px);
 }
 
 .investor-card h3 {
     color: #0f172a;
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    margin-bottom: 24px;
+    margin: 0 0 16px 0;
 }
 
 .investor-card p {
-    color: #334155;
+    color: #64748b;
     font-size: 0.95rem;
-    margin-bottom: 24px;
+    margin: 0 0 16px 0;
+    line-height: 1.6;
 }
 
 .investor-card ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 40px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0 0 40px 0;
 }
 
 .investor-card li {
-    color: #334155;
+    color: #475569;
     font-size: 0.9rem;
     margin-bottom: 12px;
-    line-height: 1.4;
+    line-height: 1.5;
+    position: relative;
+    padding-left: 20px;
+}
+
+.investor-card li::before {
+    content: "•";
+    color: #f26522; /* Orange bullet point */
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
 .card-btn {
     margin-top: auto;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent;
-    color: #4683b3; /* Branded blue */
-    border: 1px solid #4683b3;
+    padding: 12px 24px;
+    background-color: #ffffff;
+    color: #0f172a; 
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
     text-align: center;
     font-weight: 600;
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
     text-decoration: none;
 }
 
 .investor-card:hover .card-btn {
-    background-color: #4683b3;
+    background-color: #f26522;
     color: #ffffff;
+    border-color: #f26522;
 }
 
 /* Desktop-specific layout tools */
