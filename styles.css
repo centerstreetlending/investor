@@ -45,6 +45,8 @@ body {
 .top-bar {
     background-color: #f1f5f9; /* Subtle light slate */
     border-bottom: 1px solid #e2e8f0;
+    height: 38px;
+    box-sizing: border-box;
 }
 
 .top-bar-text {

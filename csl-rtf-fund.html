@@ -335,7 +335,7 @@
             if (sections.length > 0 && subNavLinks.length > 0) {
                 const observerOptions = {
                     root: null,
-                    rootMargin: '-135px 0px -60% 0px',
+                    rootMargin: '-189px 0px -60% 0px',
                     threshold: 0
                 };
                 
@@ -365,7 +365,7 @@
                     const targetElement = document.querySelector(targetId);
                     
                     if (targetElement) {
-                        const headerOffset = 135; 
+                        const headerOffset = 189; // main header (114) + subnav (~55) + padding (20)
                         const elementPosition = targetElement.getBoundingClientRect().top;
                         const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
                         
