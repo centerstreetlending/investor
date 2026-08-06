@@ -122,4 +122,56 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Bio Modal Trigger Handling
+    const bioModal = document.getElementById('bio-modal');
+    const bioTriggers = document.querySelectorAll('.bio-trigger');
+    const closeBioBtn = document.querySelector('.close-bio-modal');
+
+    if (bioModal && bioTriggers.length > 0) {
+        bioTriggers.forEach(card => {
+            card.style.cursor = 'pointer';
+            card.addEventListener('click', (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+                const name = card.getAttribute('data-bio-name');
+                const title = card.getAttribute('data-bio-title');
+                const image = card.getAttribute('data-bio-image');
+                const text = card.getAttribute('data-bio-text');
+                const highlights = card.getAttribute('data-bio-highlights');
+
+                document.getElementById('bio-modal-name').textContent = name;
+                document.getElementById('bio-modal-title').textContent = title;
+                document.getElementById('bio-modal-image').src = image;
+                document.getElementById('bio-modal-image').alt = name;
+                document.getElementById('bio-modal-text').textContent = text;
+                document.getElementById('bio-modal-highlights').innerHTML = highlights;
+
+                bioModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        if (closeBioBtn) {
+            closeBioBtn.addEventListener('click', () => {
+                bioModal.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        }
+
+        window.addEventListener('click', (e) => {
+            if (e.target === bioModal) {
+                bioModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && bioModal.classList.contains('active')) {
+                bioModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    }
 });
+

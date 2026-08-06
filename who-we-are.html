@@ -450,15 +450,17 @@
     </div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
+        function initBioModal() {
             const bioModal = document.getElementById('bio-modal');
             const bioTriggers = document.querySelectorAll('.bio-trigger');
             const closeBioBtn = document.querySelector('.close-bio-modal');
 
             if (bioModal && bioTriggers.length > 0) {
                 bioTriggers.forEach(card => {
+                    card.style.cursor = 'pointer';
                     card.addEventListener('click', (e) => {
                         e.preventDefault();
+                        e.stopPropagation();
                         const name = card.getAttribute('data-bio-name');
                         const title = card.getAttribute('data-bio-title');
                         const image = card.getAttribute('data-bio-image');
@@ -498,7 +500,13 @@
                     }
                 });
             }
-        });
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initBioModal);
+        } else {
+            initBioModal();
+        }
     </script>
 
     <script src="script.js?v=1.1"></script>
