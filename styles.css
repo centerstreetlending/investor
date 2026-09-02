@@ -184,6 +184,7 @@ body {
     background-position: center;
     position: relative;
     overflow: hidden;
+    border-bottom: 4px solid #4683b3;
 }
 
 .hero-video-bg {
