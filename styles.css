@@ -2276,9 +2276,10 @@ body.no-scroll {
         background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
     }
 
-    .hero-content {
-        align-items: center;
-        text-align: center;
+    .hero-content,
+    .about-hero-content {
+        align-items: flex-start !important;
+        text-align: left !important;
     }
     
     .hero-buttons-group {
@@ -2303,11 +2304,6 @@ body.no-scroll {
     }
     .serve-card-container > div:last-child {
         border-bottom: none !important;
-    }
-    
-    .about-hero-content {
-        align-items: center;
-        text-align: center;
     }
     .firm-overview {
         padding: 60px 0;
