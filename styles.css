@@ -358,6 +358,7 @@ body {
     overflow: hidden;
     background: linear-gradient(180deg, #eef4fa 0%, #f3f7fb 100%);
     border-bottom: 1px solid #e2e8f0;
+    isolation: isolate;
 }
 
 #our-approach::after,
@@ -384,9 +385,15 @@ body {
     background-position: center;
     background-repeat: repeat;
     mix-blend-mode: screen;
-    opacity: 0.35;
+    opacity: 0.15;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
+}
+
+#our-approach .container,
+#who-we-serve .container {
+    position: relative;
+    z-index: 10;
 }
 
 /* Who We Serve Section */
@@ -395,6 +402,7 @@ body {
     overflow: hidden;
     background: linear-gradient(180deg, #eef4fa 0%, #f3f7fb 100%);
     border-bottom: 1px solid #e2e8f0;
+    isolation: isolate;
 }
 
 #who-we-serve::before {
@@ -409,14 +417,14 @@ body {
     background-position: center;
     background-repeat: repeat;
     mix-blend-mode: screen;
-    opacity: 0.35;
+    opacity: 0.15;
     pointer-events: none;
-    z-index: 0;
+    z-index: -1;
 }
 
 #who-we-serve .container {
     position: relative;
-    z-index: 1;
+    z-index: 10;
 }
 
 .approach-section {
