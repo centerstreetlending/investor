@@ -76,16 +76,18 @@ body {
 }
 
 /* Main Header */
-.main-header {
-    background-color: #ffffff; /* Set header background to white */
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); /* Subtle shadow for floating effect */
-    border-bottom: 1px solid #f1f5f9; /* Delicate separating line */
-    height: 76px;
+.main-header,
+.header-wrapper {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid #e2e8f0;
+    height: 72px !important;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 .header-left {
@@ -1578,7 +1580,7 @@ body {
 
 .mobile-menu {
     position: fixed;
-    top: 60px; /* Docks right under sticky header */
+    top: 72px !important; /* Docks right under 72px sticky header */
     left: 0;
     width: 100%;
     background-color: #ffffff;
@@ -1665,10 +1667,10 @@ body.no-scroll {
 /* Secondary Navigation */
 .sub-nav {
     position: sticky;
-    top: 60px; /* Aligns directly below the main sticky header */
+    top: 72px !important; /* Docks 100% flush directly below 72px sticky header */
     z-index: 900;
     border-bottom: 1px solid #e2e8f0;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(8px);
 }
 
