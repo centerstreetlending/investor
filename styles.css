@@ -1702,7 +1702,7 @@ body.no-scroll {
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.25) 100%), url('pexels-tracvu-7109805.jpg');
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.94) 0%, rgba(15, 23, 42, 0.8) 55%, rgba(15, 23, 42, 0.45) 100%), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
