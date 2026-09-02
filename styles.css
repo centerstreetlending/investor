@@ -184,12 +184,12 @@ body {
 
 /* Hero Section */
 .hero {
-    min-height: 480px;
-    padding: 110px 0 100px;
+    min-height: 520px;
+    padding: 135px 0 125px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.65) 45%, rgba(15, 23, 42, 0.25) 100%), url('hero-coastal.jpg');
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.25) 100%), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -1692,8 +1692,8 @@ body.no-scroll {
 }
 
 .about-hero, .riviera-hero {
-    min-height: 480px;
-    padding: 110px 0 100px;
+    min-height: 520px;
+    padding: 135px 0 125px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
@@ -2274,6 +2274,30 @@ body.no-scroll {
     .hero-content {
         align-items: center;
         text-align: center;
+    }
+    
+    .hero-buttons-group {
+        flex-direction: column;
+        width: 100%;
+        gap: 12px;
+    }
+    .btn-group-primary, .btn-group-secondary {
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    
+    /* Who We Serve Mobile Box */
+    .serve-card-container {
+        grid-template-columns: 1fr !important;
+    }
+    .serve-card-container > div {
+        border-right: none !important;
+        border-bottom: 1px solid #e2e8f0;
+        padding: 32px 24px !important;
+    }
+    .serve-card-container > div:last-child {
+        border-bottom: none !important;
     }
     
     .about-hero-content {
