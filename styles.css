@@ -184,8 +184,17 @@ body {
     background-position: center;
     position: relative;
     overflow: hidden;
-    border-bottom: 3px solid #0f172a;
-    box-shadow: inset 0 -3px 0 0 #4683b3;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to bottom, #0f172a 0%, #0f172a 50%, #4683b3 50%, #4683b3 100%);
+    z-index: 10;
 }
 
 .hero-video-bg {
@@ -348,9 +357,19 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(180deg, #eef4fa 0%, #f3f7fb 100%);
-    border-top: 3px solid #0f172a;
-    box-shadow: inset 0 3px 0 0 #4683b3;
     border-bottom: 1px solid #e2e8f0;
+}
+
+#our-approach::after,
+#who-we-serve::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7px;
+    background: linear-gradient(to bottom, #0f172a 0%, #0f172a 50%, #4683b3 50%, #4683b3 100%);
+    z-index: 10;
 }
 
 #our-approach::before {
@@ -375,8 +394,6 @@ body {
     position: relative;
     overflow: hidden;
     background: linear-gradient(180deg, #eef4fa 0%, #f3f7fb 100%);
-    border-top: 3px solid #0f172a;
-    box-shadow: inset 0 3px 0 0 #4683b3;
     border-bottom: 1px solid #e2e8f0;
 }
 
