@@ -270,7 +270,7 @@ body {
     cursor: pointer;
     border-radius: 6px; /* Soft corporate rectangles */
     text-transform: none; /* Standard casing */
-    background-color: #f26522; /* Vibrant orange */
+    background-color: #3b82f6; /* Corporate Blue */
     color: #ffffff;
     border: none;
     display: inline-flex;
@@ -279,7 +279,7 @@ body {
 }
 
 .btn-group-primary:hover {
-    background-color: #d95a1e;
+    background-color: #2563eb;
 }
 
 .btn-group-secondary {

@@ -16,33 +16,20 @@
 <body>
 
 
-    <div class="header-wrapper" style="position: sticky; top: 0; z-index: 1000; background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);">
-        <!-- Top Bar -->
-        <div class="top-bar">
-            <div class="nav-container" style="padding-top: 8px; padding-bottom: 8px; display: flex; justify-content: flex-end;">
-                <div style="display: flex; align-items: center; gap: 24px;">
-                    <a href="who-we-are" class="top-bar-link">Who we are</a>
-                    <a href="csl-rtf-fund" class="top-bar-link">CSL-RTF Fund</a>
-                    <a href="riviera-capital" class="top-bar-link">Riviera Capital</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Main Navigation -->
-        <header class="main-header" style="position: static; box-shadow: none;">
-            <div class="nav-container">
-                <!-- Left: Logo -->
-                <div style="display: flex; align-items: center;">
-                    <a href="./" class="logo" style="display: flex; align-items: center; text-decoration: none;">
-                        <img src="CS-Capital_Horiz_OnLight.svg" alt="Center Street Capital Logo" class="logo-image" style="height: 30px; width: auto; object-fit: contain;">
-                    </a>
-                    <span style="color: #cbd5e1; margin: 0 16px; font-size: 1.25rem; font-weight: 300; line-height: 1;">|</span>
-                    <span style="color: #000000; font-weight: 500; font-size: 1.15rem; letter-spacing: -0.01em;">CSL-RTL Fund</span>
-                </div>
+    <!-- Unified Navigation Header -->
+    <header class="header-wrapper" style="position: sticky; top: 0; z-index: 1000; background-color: #ffffff; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); padding: 14px 0;">
+        <div class="nav-container" style="display: flex; align-items: center; justify-content: space-between;">
+            <!-- Left: Logo -->
+            <a href="./" class="logo" style="display: flex; align-items: center; text-decoration: none;">
+                <img src="CS-Capital_Horiz_OnLight.svg" alt="Center Street Capital Logo" class="logo-image" style="height: 32px; width: auto; object-fit: contain;">
+            </a>
             
             <!-- Right: Navigation Links (Desktop) -->
-            <div class="desktop-nav" style="display: flex; align-items: center; gap: 40px;">
-                <a href="#" class="nav-btn request-access-btn">Request Access</a>
+            <div class="desktop-nav" style="display: flex; align-items: center; gap: 32px;">
+                <a href="who-we-are" class="nav-link" style="color: #334155; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s;">Who we are</a>
+                <a href="csl-rtf-fund" class="nav-link" style="color: #334155; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s;">CSL-RTF Fund</a>
+                <a href="riviera-capital" class="nav-link" style="color: #334155; text-decoration: none; font-weight: 500; font-size: 0.9rem; transition: color 0.2s;">Riviera Capital</a>
+                <a href="#" class="nav-btn request-access-btn" style="background-color: #f26522; color: #ffffff; padding: 10px 22px; border-radius: 4px; font-weight: 600; font-size: 0.9rem; text-decoration: none; transition: background-color 0.2s;">Request Access</a>
             </div>
 
             <!-- Hamburger Button (Mobile) -->
@@ -53,7 +40,6 @@
             </button>
         </div>
     </header>
-    </div>
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
