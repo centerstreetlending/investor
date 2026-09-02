@@ -184,7 +184,11 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 125px 0 115px;
+    min-height: 480px;
+    padding: 110px 0 100px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
     background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.65) 45%, rgba(15, 23, 42, 0.25) 100%), url('hero-coastal.jpg');
     background-size: cover;
     background-position: center;
@@ -192,7 +196,8 @@ body {
     overflow: hidden;
 }
 
-.hero::after {
+.hero::after,
+.about-hero::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -1687,11 +1692,16 @@ body.no-scroll {
 }
 
 .about-hero, .riviera-hero {
-    padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with homepage H1 */
+    min-height: 480px;
+    padding: 110px 0 100px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
     /* Professional Left-to-Right Scrim Gradient */
     background-size: cover;
     background-position: center;
     position: relative;
+    overflow: hidden;
 }
 
 .about-hero {
@@ -2252,8 +2262,9 @@ body.no-scroll {
     }
 
     /* Hero */
-    .hero {
-        padding: 40px 0 60px; /* Offset by 40px for kicker height */
+    .hero, .about-hero, .riviera-hero {
+        padding: 60px 0 60px;
+        min-height: auto;
     }
     /* Mobile Scrim Fallback */
     .hero, .about-hero {
@@ -2394,9 +2405,6 @@ body.no-scroll {
     }
     .sub-nav-link {
         font-size: 0.75rem;
-    }
-    .about-hero {
-        padding: 40px 0 60px; /* Offset by 40px to account for kicker height */
     }
     .about-title {
         font-size: 2.25rem;
