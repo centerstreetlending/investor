@@ -36,9 +36,10 @@ body {
 }
 
 .container {
-    max-width: 950px; /* Highly condensed editorial layout */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 /* Top Bar */
@@ -931,9 +932,10 @@ body {
 }
 
 .strategies-container {
-    max-width: 1250px; /* Widened for 3 columns */
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 5%;
+    box-sizing: border-box;
 }
 
 .strategies-header {
