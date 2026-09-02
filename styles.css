@@ -178,8 +178,7 @@ body {
 
 /* Hero Section */
 .hero {
-    padding: 140px 0 120px; /* Offset by 40px to account for kicker height so H1 aligns perfectly with About H1 */
-    /* Professional Left-to-Right Scrim Gradient */
+    padding: 70px 0 70px;
     background-image: linear-gradient(to right, rgba(15, 23, 42, 0.9) 0%, rgba(15, 23, 42, 0.65) 45%, rgba(15, 23, 42, 0.25) 100%), url('hero-coastal.jpg');
     background-size: cover;
     background-position: center;
@@ -209,26 +208,26 @@ body {
 }
 
 .hero-content {
-    max-width: 900px; /* Allow wider text */
+    max-width: 850px;
     margin: 0;
-    text-align: left; /* Left align */
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
 .hero-kicker {
-    margin-bottom: 24px;
+    margin-bottom: 14px;
 }
 
 .hero-title {
-    font-size: 3.5rem; /* Matching About hero */
-    line-height: 1.15; /* Matching About hero */
+    font-size: 2.75rem;
+    line-height: 1.15;
     font-weight: 700;
-    color: #ffffff; /* White text */
-    margin-top: 0; /* Reset for flex/block consistency */
-    margin-bottom: 32px; /* Matching About hero */
-    letter-spacing: -0.02em; /* Matching About hero */
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
 }
 
 .hero-title-line-1 {
@@ -237,16 +236,15 @@ body {
 
 .hero-title-line-2 {
     display: block;
-    /* Removed staggered indent */
 }
 
 .hero-subtitle {
-    font-size: 1.25rem; /* Matching About hero */
-    color: #e2e8f0; /* Light slate for contrast */
-    line-height: 1.6;
-    margin-top: 0; /* Reset for flex/block consistency */
-    margin-bottom: 64px; /* Matching About hero */
-    max-width: 700px; /* Matching About hero */
+    font-size: 1rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin-top: 0;
+    margin-bottom: 28px;
+    max-width: 650px;
 }
 
 .hero-divider {
@@ -262,20 +260,20 @@ body {
 }
 
 .btn-group-primary {
-    font-size: 0.95rem; /* Slightly scaled down text */
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 14px 28px; /* Slightly scaled down padding */
+    padding: 10px 22px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 6px; /* Soft corporate rectangles */
-    text-transform: none; /* Standard casing */
-    background-color: #4683b3; /* Exact Brand Blue */
+    border-radius: 4px;
+    text-transform: none;
+    background-color: #4683b3;
     color: #ffffff;
     border: none;
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* For the arrow */
+    gap: 8px;
 }
 
 .btn-group-primary:hover {
@@ -283,18 +281,18 @@ body {
 }
 
 .btn-group-secondary {
-    font-size: 0.95rem; /* Slightly scaled down text */
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 14px 28px; /* Slightly scaled down padding */
+    padding: 10px 22px;
     text-decoration: none;
     transition: all 0.3s ease;
     cursor: pointer;
-    border-radius: 6px; /* Soft corporate rectangles */
+    border-radius: 4px;
     text-transform: none;
-    background-color: rgba(255, 255, 255, 0.08); /* Subtle translucent fill */
-    color: #ffffff; /* White text */
-    border: 1px solid rgba(255, 255, 255, 0.8); /* Stronger white outline for pop */
-    backdrop-filter: blur(4px); /* Blur behind the button */
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(4px);
 }
 
 .btn-group-secondary:hover {
