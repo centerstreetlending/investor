@@ -2323,9 +2323,17 @@ body.no-scroll {
     .footer-grid,
     .modal-grid,
     .serve-grid,
-    .overview-grid {
-        grid-template-columns: 1fr;
-        gap: 24px;
+    .overview-grid,
+    .grid-3-col,
+    .grid-2-col,
+    .grid-4-col {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    .grid-5-col {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 20px !important;
     }
     
     /* Footer layout */
