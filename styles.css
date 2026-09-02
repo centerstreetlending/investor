@@ -36,10 +36,9 @@ body {
 }
 
 .container {
-    width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 4vw;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -934,10 +933,9 @@ body {
 }
 
 .strategies-container {
-    width: 100%;
-    max-width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 4vw;
+    padding: 0 5%;
     box-sizing: border-box;
 }
 
@@ -1696,25 +1694,17 @@ body.no-scroll {
     color: #4683b3;
 }
 
-.about-hero, .riviera-hero {
+.hero, .about-hero, .riviera-hero {
     min-height: 520px;
     padding: 135px 0 125px;
     display: flex;
     align-items: center;
     box-sizing: border-box;
-    /* Professional Left-to-Right Scrim Gradient */
+    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.6) 50%, rgba(15, 23, 42, 0.25) 100%), url('pexels-tracvu-7109805.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
     overflow: hidden;
-}
-
-.about-hero {
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('pexels-tracvu-7109805-gray.jpg');
-}
-
-.riviera-hero {
-    background-image: linear-gradient(to right, rgba(15, 23, 42, 0.95) 0%, rgba(15, 23, 42, 0.7) 45%, rgba(15, 23, 42, 0.2) 100%), url('shutterstock_1869821155_1.webp');
 }
 
 .about-hero-content {
