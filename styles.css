@@ -346,6 +346,8 @@ body {
 #our-approach {
     position: relative;
     overflow: hidden;
+    background: linear-gradient(180deg, #f0f6fa 0%, #f4f8fb 100%);
+    border-bottom: 1px solid #e2e8f0;
 }
 
 #our-approach::before {
@@ -358,8 +360,7 @@ body {
     background-image: url('map-grid-bg.png');
     background-size: cover;
     background-position: center;
-    filter: invert(1);
-    opacity: 0.05;
+    filter: invert(1) opacity(0.08);
     pointer-events: none;
     z-index: 0;
 }
