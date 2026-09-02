@@ -343,6 +343,32 @@ body {
 
 
 /* Approach Section */
+#our-approach {
+    position: relative;
+    overflow: hidden;
+}
+
+#our-approach::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('map-grid-bg.png');
+    background-size: cover;
+    background-position: center;
+    filter: invert(1);
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#our-approach .container {
+    position: relative;
+    z-index: 1;
+}
+
 .approach-section {
     background-color: #f8fafc; /* Very light slate/grey */
     padding: 100px 0; /* Standardized to 100px */
