@@ -2269,21 +2269,41 @@ body.no-scroll {
         background-image: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('pexels-tracvu-7109805.jpg');
     }
 
+    /* Mobile Hero Centering */
     .hero-content,
     .about-hero-content {
-        align-items: flex-start !important;
-        text-align: left !important;
+        align-items: center !important;
+        text-align: center !important;
+        margin: 0 auto !important;
     }
-    
-    .hero-buttons-group {
-        flex-direction: column;
-        width: 100%;
-        gap: 12px;
+    .hero-kicker,
+    .about-kicker {
+        text-align: center !important;
+    }
+    .hero-title,
+    .about-title {
+        text-align: center !important;
+        font-size: 2.15rem !important;
+    }
+    .hero-subtitle,
+    .about-desc {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        font-size: 1.05rem !important;
+    }
+    .hero-buttons-group,
+    .hero-buttons {
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        width: 100% !important;
+        gap: 12px !important;
     }
     .btn-group-primary, .btn-group-secondary {
-        width: 100%;
-        text-align: center;
-        box-sizing: border-box;
+        width: 100% !important;
+        text-align: center !important;
+        box-sizing: border-box !important;
     }
     
     /* Who We Serve Mobile Box */
