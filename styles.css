@@ -232,12 +232,13 @@ body {
 }
 
 .hero-content {
-    max-width: 850px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .hero-kicker {
@@ -278,9 +279,9 @@ body {
 .hero-buttons-group {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 16px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .btn-group-primary {
@@ -1708,12 +1709,13 @@ body.no-scroll {
 }
 
 .about-hero-content {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
+    width: 100%;
+    max-width: 950px;
+    margin: 0;
+    text-align: left;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .about-kicker {
