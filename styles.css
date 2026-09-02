@@ -270,7 +270,7 @@ body {
     cursor: pointer;
     border-radius: 6px; /* Soft corporate rectangles */
     text-transform: none; /* Standard casing */
-    background-color: #3b82f6; /* Corporate Blue */
+    background-color: #4683b3; /* Exact Brand Blue */
     color: #ffffff;
     border: none;
     display: inline-flex;
@@ -279,7 +279,7 @@ body {
 }
 
 .btn-group-primary:hover {
-    background-color: #2563eb;
+    background-color: #396e98;
 }
 
 .btn-group-secondary {
