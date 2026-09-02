@@ -136,9 +136,15 @@ body {
     transition: color 0.2s ease;
 }
 
-.nav-link:hover,
+.nav-link:hover {
+    color: #4683b3; /* Brand blue hover state */
+}
+
 .nav-link.active {
-    color: #4683b3; /* Brand blue hover and active state */
+    color: #4683b3 !important; /* Brand blue active state */
+    font-weight: 700 !important;
+    border-bottom: 2px solid #4683b3;
+    padding-bottom: 4px;
 }
 
 .nav-btn {
