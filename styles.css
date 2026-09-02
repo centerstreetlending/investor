@@ -1608,7 +1608,7 @@ body.no-scroll {
 /* Secondary Navigation */
 .sub-nav {
     position: sticky;
-    top: 114px; /* Sits exactly below the main sticky header + top bar */
+    top: 60px; /* Aligns directly below the main sticky header */
     z-index: 900;
     border-bottom: 1px solid #e2e8f0;
     background-color: rgba(255, 255, 255, 0.95);
@@ -1618,10 +1618,10 @@ body.no-scroll {
 .sub-nav-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    justify-content: flex-start;
+    gap: 36px;
+    padding-top: 14px;
+    padding-bottom: 14px;
 }
 
 .sub-nav-link {
