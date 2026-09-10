@@ -392,6 +392,15 @@ body {
     isolation: isolate;
 }
 
+#our-approach.bg-white-section {
+    background: #ffffff !important;
+}
+
+#our-approach.bg-white-section::after,
+#our-approach.bg-white-section::before {
+    display: none !important;
+}
+
 #our-approach::after,
 #who-we-serve::after {
     content: '';
