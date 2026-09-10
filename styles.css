@@ -17,6 +17,15 @@
     --text-2xl: 1.5rem;    /* 24px */
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+section[id] {
+    scroll-margin-top: 70px;
+}
+
 * {
     margin: 0;
     padding: 0;
